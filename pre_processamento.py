@@ -7,31 +7,34 @@ class ArticleReader:
 
     def __init__(self, from_path):
         with open(from_path, 'r') as f:
-            text_file = f.read()
-            self.extrai_titulo(text_file)
-            self.corta_image_galerry(text_file)
-            self.corta_edit()
+            text_file = f.readlines()
+            # self.extrai_titulo(text_file)
+            # self.corta_image_galerry(text_file)
+            self.corta_edit(text_file)
 
 
-    def extrai_titulo(self, texto):
-        regex_1 = re.compile(r'"(.+)"')
-        list = re.findall(regex_1, texto)
-        self.title = list[0]
+    # def extrai_titulo(self, texto):
+    #     regex_1 = re.compile(r'"(.+)"')
+    #     list = re.findall(regex_1, texto)
+    #     self.title = list[0]
+    #
+    # def corta_image_galerry(self, texto):
+    #     regex_2 = re.compile(r'(".*)Ima', flags=re.DOTALL)
+    #     list_2 = re.findall(regex_2, texto)
+    #     self.conteudo = list_2[0]
 
-    def corta_image_galerry(self, texto):
-        regex_2 = re.compile(r'(".*)Ima', flags=re.DOTALL)
-        list_2 = re.findall(regex_2, texto)
-        self.conteudo = list_2[0]
+    def corta_edit(self, text_file):
+        for line in text_file:
+            regex_3 = re.compile(r'^.*Edit')
+            regex_4 = re.compile(r'(^.*)Edit')
+            list_1 = re.findall(regex_3, line)
+            list_2 = re.findall(regex_4, line)
 
-    def corta_edit(self):
-        regex_3 = re.compile(r'^.*Edit', flags=re.MULTILINE)
-        regex_4 = re.compile(r'(^.*)Edit', flags=re.MULTILINE)
-        lista_1 = re.sub(r'^.*Edit', r'(^.*)Edit', self.conteudo)
-        self.conteudo = lista_1
+            if list_1:
+                line = re.sub(regex_3, list_2[0], line)
+            if line != '\n':
+                self.conteudo.append(line)
         print(self.conteudo)
-        # lista_2 = re.findall(regex_4, self.conteudo)
-        # for palavras in lista_1:
-
 
     def save_articles(self, to):
         with open(to + "/" + self.title + ".txt", 'w') as article_file:
