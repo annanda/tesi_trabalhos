@@ -44,9 +44,6 @@ class ArticleReader:
         with open(to + "/" + self.title + ".txt", 'w') as article_file:
             article_file.write(self.texto_final)
 
-
-
-
 all_seasons_files = []
 
 for season in glob.glob("raw_documents/*"):
@@ -59,8 +56,4 @@ for season in all_seasons_files:
     season_number = re.findall(regex, season)
     for episode in file_list:
         article = ArticleReader(episode)
-        article.save_articles("documents/"+ season_number[0])
-
-
-
-
+        article.save_articles("documents/" + season_number[0])
