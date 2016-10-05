@@ -24,7 +24,8 @@ class ArticleReader:
     def corta_image_galerry(self):
         regex_2 = re.compile(r'(".*)Ima', flags=re.DOTALL)
         list_2 = re.findall(regex_2, self.texto_final)
-        self.texto_final = list_2[0]
+        if list_2:
+            self.texto_final = list_2[0]
 
     def corta_edit(self, text_lines):
         for line in text_lines:
