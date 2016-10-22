@@ -30,5 +30,11 @@ class NEExtractor:
 
 extractor = NEExtractor("documents/season_1/Baelor.txt")
 extractor.get_ne(extractor.nominated_entities())
-print(extractor.named_entities)
-print(len(extractor.named_entities))
+print(set(extractor.named_entities))
+print(len(set(extractor.named_entities)))
+
+# primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
+# 873 entidades nomeadas
+
+# segunda tentativa: transformando de lista pra conjunto
+# 319 entidades nomeadas
