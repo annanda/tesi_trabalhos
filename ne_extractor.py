@@ -23,24 +23,24 @@ class NEExtractor:
     def get_ne(self, tagged_sentences):
         for sentence in tagged_sentences:
             anterior_is_ne = False
-            for i, word in enumerate(sentence):
-                if i == 0:
-                    if word[1] == 'NN' or word[1] == 'NNP':
-                        if self.is_first_letter_upper(word[0]):
-                            self.named_entities.append(word[0])
-                            anterior_is_ne = True
-                elif i > 0:
-                    if word[1] == 'NN' or word[1] == 'NNP':
-                        if self.is_first_letter_upper(word[0]):
-                            if anterior_is_ne:
-                                self.named_entities[-1] =  self.named_entities[-1] + " " + word[0]
-                            else:
-                                self.named_entities.append(word[0])
+            for word in sentence:
+                if self.is_nnp_and_upper(word[0], word[1]):
+                    if anterior_is_ne:
+                        self.named_entities[-1] = self.named_entities[-1] + " " + word[0]
                     else:
-                        anterior_is_ne = False
+                        self.named_entities.append(word[0])
+                    anterior_is_ne = True
+                else:
+                    anterior_is_ne = False
 
     def is_first_letter_upper(self, word):
         return word[0].isupper()
+
+    def is_nnp_and_upper(self, word, tag):
+        if tag == 'NN' or tag == 'NNP':
+            if self.is_first_letter_upper(word):
+                return True
+        return False
 
     def create_ne_file(self):
         # para nao repetir os elementos
@@ -52,9 +52,6 @@ class NEExtractor:
                 article_file.write(entidade + "\n")
 
 extractor = NEExtractor("second_processing/Baelor s1e9.txt")
-# extractor.get_ne(extractor.nominated_entities())
-# print(set(extractor.named_entities))
-# print(len(set(extractor.named_entities)))
 
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
 # 873 entidades nomeadas
@@ -69,3 +66,6 @@ extractor = NEExtractor("second_processing/Baelor s1e9.txt")
 #quarta tentativa: mudando o pre-processamento
 # apenas com as secoes: Plot, Summary, Appearances and Deaths
 # 113 endidades nomeadas
+
+# quinta tentativa: consertando o metodo que junta mais de uma NE seguidas
+# 105 entidades nomeadas
