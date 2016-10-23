@@ -5,6 +5,8 @@ class NEExtractor:
     def __init__(self, article_path):
         self.read_article(article_path)
         self.named_entities = []
+        self.get_ne(self.nominated_entities())
+        self.create_ne_file()
 
     def nominated_entities(self):
 
@@ -40,10 +42,16 @@ class NEExtractor:
     def is_first_letter_upper(self, word):
         return word[0].isupper()
 
+    def create_ne_file(self):
+        self.named_entities = set(self.named_entities)
+        with open("entidades_nomeadas.csv", 'w') as article_file:
+            for entidade in self.named_entities:
+                article_file.write(entidade + "\n")
+
 extractor = NEExtractor("second_processing/Baelor s1e9.txt")
-extractor.get_ne(extractor.nominated_entities())
-print(set(extractor.named_entities))
-print(len(set(extractor.named_entities)))
+# extractor.get_ne(extractor.nominated_entities())
+# print(set(extractor.named_entities))
+# print(len(set(extractor.named_entities)))
 
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
 # 873 entidades nomeadas
