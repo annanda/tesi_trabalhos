@@ -20,10 +20,22 @@ class NEExtractor:
 
     def get_ne(self, tagged_sentences):
         for sentence in tagged_sentences:
-            for word in sentence:
-                if word[1] == 'NN' or word[1] == 'NNP':
-                    if self.is_first_letter_upper(word[0]):
-                        self.named_entities.append(word[0])
+            anterior_is_ne = False
+            for i, word in enumerate(sentence):
+                if i == 0:
+                    if word[1] == 'NN' or word[1] == 'NNP':
+                        if self.is_first_letter_upper(word[0]):
+                            self.named_entities.append(word[0])
+                            anterior_is_ne = True
+                elif i > 0:
+                    if word[1] == 'NN' or word[1] == 'NNP':
+                        if self.is_first_letter_upper(word[0]):
+                            if anterior_is_ne:
+                                self.named_entities[-1] =  self.named_entities[-1] + " " + word[0]
+                            else:
+                                self.named_entities.append(word[0])
+                    else:
+                        anterior_is_ne = False
 
     def is_first_letter_upper(self, word):
         return word[0].isupper()
@@ -38,3 +50,7 @@ print(len(set(extractor.named_entities)))
 
 # segunda tentativa: transformando de lista pra conjunto
 # 319 entidades nomeadas
+
+# terceira tentativa: colocando ne seguidas como uma só
+# 336 entidades nomeadas
+# muitas substrings repetidas
