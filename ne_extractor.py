@@ -40,7 +40,7 @@ class NEExtractor:
     def is_first_letter_upper(self, word):
         return word[0].isupper()
 
-extractor = NEExtractor("documents/season_1/Baelor.txt")
+extractor = NEExtractor("second_processing/Baelor s1e9.txt")
 extractor.get_ne(extractor.nominated_entities())
 print(set(extractor.named_entities))
 print(len(set(extractor.named_entities)))
@@ -54,3 +54,7 @@ print(len(set(extractor.named_entities)))
 # terceira tentativa: colocando ne seguidas como uma só
 # 336 entidades nomeadas
 # muitas substrings repetidas
+
+#quarta tentativa: mudando o pre-processamento
+# apenas com as secoes: Plot, Summary, Appearances and Deaths
+# 113 endidades nomeadas
