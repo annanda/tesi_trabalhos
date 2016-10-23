@@ -8,6 +8,7 @@ class ArticleReader:
         self.title = None
         self.plot = None
         self.summary = None
+        self.appearences = None
         self.texto_final = None
         with open(from_path, 'r') as f:
             text_lines = f.readlines()
@@ -15,6 +16,7 @@ class ArticleReader:
             self.extrai_titulo(text_file)
             self.get_plot(text_file)
             self.get_summary(text_file)
+            self.get_appearences(text_file)
             # self.save_articles("second_processing")
 
     def extrai_titulo(self, texto):
@@ -39,6 +41,11 @@ class ArticleReader:
         regex_1 = re.compile(r'Summary(.*)Appearances\n\s Main', flags=re.DOTALL)
         list = re.findall(regex_1, texto)
         self.summary = list[0]
+
+    def get_appearences(self, texto):
+        regex_1 = re.compile(r'First\n(.*)Deaths', flags=re.DOTALL)
+        list = re.findall(regex_1, texto)
+        self.appearences = list[0]
 
     def monta_texto_final(self):
         self.texto_final = self.title
@@ -66,4 +73,5 @@ class ArticleReader:
 article = ArticleReader("documents/season_1/Baelor.txt")
 # print(article.title)
 # print(article.plot)
-print(article.summary)
+# print(article.summary)
+print(article.appearences)
