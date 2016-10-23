@@ -51,7 +51,7 @@ class NEExtractor:
             for entidade in self.named_entities:
                 article_file.write(entidade + "\n")
 
-extractor = NEExtractor("second_processing/Baelor s1e9.txt")
+extractor = NEExtractor("second_processing/Baelor s1e9_tests.txt")
 
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
 # 873 entidades nomeadas

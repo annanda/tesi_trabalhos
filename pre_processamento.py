@@ -56,4 +56,4 @@ for season in all_seasons_files:
     season_number = re.findall(regex, season)
     for episode in file_list:
         article = ArticleReader(episode)
-        article.save_articles("documents/" + season_number[0])
+        article.save_articles("first_processing/" + season_number[0])

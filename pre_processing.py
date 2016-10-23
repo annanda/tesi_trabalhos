@@ -86,6 +86,6 @@ class ArticleReader:
 #     season_number = re.findall(regex, season)
 #     for episode in file_list:
 #         article = ArticleReader(episode)
-#         article.save_articles("documents/" + season_number[0])
+#         article.save_articles("first_processing/" + season_number[0])
 
-article = ArticleReader("documents/season_1/Baelor.txt")
+article = ArticleReader("first_processing/season_1/Baelor.txt")
