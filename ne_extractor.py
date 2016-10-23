@@ -43,7 +43,10 @@ class NEExtractor:
         return word[0].isupper()
 
     def create_ne_file(self):
+        # para nao repetir os elementos
         self.named_entities = set(self.named_entities)
+        self.named_entities = list(self.named_entities)
+        self.named_entities.sort()
         with open("entidades_nomeadas.csv", 'w') as article_file:
             for entidade in self.named_entities:
                 article_file.write(entidade + "\n")
