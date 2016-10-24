@@ -21,24 +21,53 @@ class NEExtractor:
             return article.read()
 
     def get_ne(self, tagged_sentences):
+        ne = []
         for sentence in tagged_sentences:
-            anterior_is_ne = False
-            for word in sentence:
-                if self.is_nnp_and_upper(word[0], word[1]):
-                    if anterior_is_ne:
-                        self.named_entities[-1] = self.named_entities[-1] + " " + word[0]
-                    else:
-                        self.named_entities.append(word[0])
-                    anterior_is_ne = True
-                else:
-                    anterior_is_ne = False
+            for i, tagged_word in enumerate(sentence):
+                if self.is_first_letter_upper(tagged_word):
+                    if self.is_first_word_and_not_np(i, tagged_word):
+                        continue
+                    ne.append(tagged_word)
+                    continue
+
+                if ne and self.is_complement(tagged_word):
+                    ne.append(tagged_word)
+                    continue
+
+                if ne:
+                    if self.has_np(ne):
+                        ne = self.remove_unfinished_complements(ne)
+                        named_entity = self.build_named_entity(ne)
+                        self.named_entities.append(named_entity)
+
+                    ne.clear()
+            if ne:
+                if self.has_np(ne):
+                    ne = self.remove_unfinished_complements(ne)
+                    named_entity = self.build_named_entity(ne)
+                    self.named_entities.append(named_entity)
+
+    def build_named_entity(self, ne):
+        return " ".join([word[0] for word in ne])
+
+    def is_first_word_and_not_np(self, i, word):
+        tag = word[1]
+        if i == 0 and not tag == 'NN' and not tag == 'NNP':
+            return True
+        return False
+
+    def is_complement(self, word):
+        text = word[0]
+        return text in ("of", "the", "'s")
 
     def is_first_letter_upper(self, word):
-        return word[0].isupper()
+        text = word[0]
+        return text[0].isupper()
 
-    def is_nnp_and_upper(self, word, tag):
-        if tag == 'NN' or tag == 'NNP':
-            if self.is_first_letter_upper(word):
+    def has_np(self, ne):
+        for word in ne:
+            tag = word[1]
+            if tag == 'NN' or tag == 'NNP':
                 return True
         return False
 
@@ -51,7 +80,14 @@ class NEExtractor:
             for entidade in self.named_entities:
                 article_file.write("{0}\n".format(entidade))
 
-extractor = NEExtractor("The Rains of Castamere.txt")
+    def remove_unfinished_complements(self, ne):
+        if self.is_complement(ne[-1]):
+            return ne[:-1]
+        else:
+            return ne
+
+
+extractor = NEExtractor("second_processing/Baelor s1e9_tests.txt")
 
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
 # 873 entidades nomeadas
@@ -63,7 +99,7 @@ extractor = NEExtractor("The Rains of Castamere.txt")
 # 336 entidades nomeadas
 # muitas substrings repetidas
 
-#quarta tentativa: mudando o pre-processamento
+# quarta tentativa: mudando o pre-processamento
 # apenas com as secoes: Plot, Summary, Appearances and Deaths
 # 113 endidades nomeadas
 
