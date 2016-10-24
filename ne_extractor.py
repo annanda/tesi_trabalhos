@@ -3,7 +3,7 @@ import nltk
 
 class NEExtractor:
     def __init__(self, article_path):
-        self.read_article(article_path)
+        self.article = self.read_article(article_path)
         self.named_entities = []
         self.get_ne(self.nominated_entities())
         self.create_ne_file()
@@ -18,7 +18,7 @@ class NEExtractor:
 
     def read_article(self, path):
         with open(path, 'r', encoding="utf-8") as article:
-            self.article = article.read()
+            return article.read()
 
     def get_ne(self, tagged_sentences):
         for sentence in tagged_sentences:
@@ -51,7 +51,7 @@ class NEExtractor:
             for entidade in self.named_entities:
                 article_file.write("{0}\n".format(entidade))
 
-extractor = NEExtractor("second_processing/Baelor s1e9_tests.txt")
+extractor = NEExtractor("The Rains of Castamere.txt")
 
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
 # 873 entidades nomeadas
