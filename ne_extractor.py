@@ -17,7 +17,7 @@ class NEExtractor:
         return tagged_sentences
 
     def read_article(self, path):
-        with open(path, 'r') as article:
+        with open(path, 'r', encoding="utf-8") as article:
             self.article = article.read()
 
     def get_ne(self, tagged_sentences):
@@ -47,9 +47,9 @@ class NEExtractor:
         self.named_entities = set(self.named_entities)
         self.named_entities = list(self.named_entities)
         self.named_entities.sort()
-        with open("entidades_nomeadas.csv", 'w') as article_file:
+        with open("entidades_nomeadas.csv", 'w', encoding="utf-8") as article_file:
             for entidade in self.named_entities:
-                article_file.write(entidade + "\n")
+                article_file.write("{0}\n".format(entidade))
 
 extractor = NEExtractor("second_processing/Baelor s1e9_tests.txt")
 
