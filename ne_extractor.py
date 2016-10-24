@@ -9,7 +9,6 @@ class NEExtractor:
         self.create_ne_file()
 
     def nominated_entities(self):
-
         sentences = nltk.sent_tokenize(self.article)
         tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
         tagged_sentences = [nltk.pos_tag(sentence) for sentence in tokenized_sentences]
@@ -76,7 +75,7 @@ class NEExtractor:
         self.named_entities = set(self.named_entities)
         self.named_entities = list(self.named_entities)
         self.named_entities.sort()
-        with open("entidades_nomeadas.csv", 'w', encoding="utf-8") as article_file:
+        with open("entidades_nomeadas_baelor.csv", 'w', encoding="utf-8") as article_file:
             for entidade in self.named_entities:
                 article_file.write("{0}\n".format(entidade))
 
@@ -87,7 +86,7 @@ class NEExtractor:
             return ne
 
 
-extractor = NEExtractor("second_processing/Baelor s1e9_tests.txt")
+extractor = NEExtractor("second_processing/Baelor s1e9.txt")
 
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
 # 873 entidades nomeadas
@@ -105,3 +104,6 @@ extractor = NEExtractor("second_processing/Baelor s1e9_tests.txt")
 
 # quinta tentativa: consertando o metodo que junta mais de uma NE seguidas
 # 105 entidades nomeadas
+
+# sexta tentativa: migrando o codigo do java pro python
+# 103 entidades nomeadas
