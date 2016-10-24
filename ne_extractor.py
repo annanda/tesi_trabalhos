@@ -1,5 +1,5 @@
 import nltk
-
+import re
 
 class NEExtractor:
     def __init__(self, article_path):
@@ -10,7 +10,10 @@ class NEExtractor:
 
     def nominated_entities(self):
 
-        sentences = nltk.sent_tokenize(self.article)
+        sentences = re.split(r'[\.\n]', self.article)
+        sentences = [sentence.strip(" '") for sentence in sentences]
+        sentences = [sentence for sentence in sentences if sentence]
+
         tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
         tagged_sentences = [nltk.pos_tag(sentence) for sentence in tokenized_sentences]
 
@@ -22,10 +25,11 @@ class NEExtractor:
 
     def get_ne(self, tagged_sentences):
         ne = []
-        for sentence in tagged_sentences:
-            for i, tagged_word in enumerate(sentence):
+        for i, sentence in enumerate(tagged_sentences):
+            for j, tagged_word in enumerate(sentence):
+
                 if self.is_first_letter_upper(tagged_word):
-                    if self.is_first_word_and_not_np(i, tagged_word):
+                    if self.is_first_word_and_not_np(j, tagged_word):
                         continue
                     ne.append(tagged_word)
                     continue
@@ -38,6 +42,7 @@ class NEExtractor:
                     if self.has_np(ne):
                         ne = self.remove_unfinished_complements(ne)
                         named_entity = self.build_named_entity(ne)
+                        print("({2}){0} - {1}\n".format(named_entity, str(sentence), i))
                         self.named_entities.append(named_entity)
 
                     ne.clear()
@@ -45,10 +50,19 @@ class NEExtractor:
                 if self.has_np(ne):
                     ne = self.remove_unfinished_complements(ne)
                     named_entity = self.build_named_entity(ne)
+                    print("({2}){0} - {1}\n".format(named_entity, str(sentence), i))
                     self.named_entities.append(named_entity)
 
+                ne.clear()
+
     def build_named_entity(self, ne):
-        return " ".join([word[0] for word in ne])
+        named_entity = " ".join([word[0] for word in ne])
+
+        # resolve quando o 's no final de uma palavra não é separado em outro token
+        if len(named_entity) > 2 and named_entity.endswith("'s"):
+            named_entity = named_entity[:-2]
+
+        return named_entity
 
     def is_first_word_and_not_np(self, i, word):
         tag = word[1]
