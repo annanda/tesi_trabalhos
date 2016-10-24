@@ -7,6 +7,7 @@ class NEExtractor:
         self.named_entities = []
         self.get_ne(self.nominated_entities())
         self.create_ne_file()
+        self.read_test_file()
 
     def nominated_entities(self):
         sentences = nltk.sent_tokenize(self.article)
@@ -84,6 +85,18 @@ class NEExtractor:
             return ne[:-1]
         else:
             return ne
+
+    def read_test_file(self):
+        with open("tests/ne_baelor_s1e9.csv", 'r') as test_file:
+            test = test_file.readlines()
+            ne_test = []
+            for ne in test:
+                ne_test.append(ne)
+            ne_test.sort()
+            print(ne_test)
+        with open("tests/ne_baelor_s1e9_ordenado.csv", 'w') as test_file_write:
+            for ne in ne_test:
+                test_file_write.write(ne)
 
 
 extractor = NEExtractor("second_processing/Baelor s1e9.txt")
