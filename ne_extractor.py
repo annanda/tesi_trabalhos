@@ -1,13 +1,17 @@
 import nltk
 import re
+import glob
+import os.path
 
 class NEExtractor:
+
+    named_entities = []
+
     def __init__(self, article_path):
         self.article = self.read_article(article_path)
-        self.named_entities = []
         self.get_ne(self.nominated_entities())
-        self.create_ne_file()
-        self.read_test_file()
+        # self.create_ne_file()
+        # self.read_test_file()
 
     def nominated_entities(self):
 
@@ -44,7 +48,8 @@ class NEExtractor:
                         ne = self.remove_unfinished_complements(ne)
                         named_entity = self.build_named_entity(ne)
                         # print("({2}){0} - {1}\n".format(named_entity, str(sentence), i))
-                        self.named_entities.append(named_entity)
+                        if len(named_entity) > 1:
+                            self.named_entities.append(named_entity)
 
                     ne.clear()
             if ne:
@@ -52,7 +57,8 @@ class NEExtractor:
                     ne = self.remove_unfinished_complements(ne)
                     named_entity = self.build_named_entity(ne)
                     # print("({2}){0} - {1}\n".format(named_entity, str(sentence), i))
-                    self.named_entities.append(named_entity)
+                    if len(named_entity) > 1:
+                        self.named_entities.append(named_entity)
 
                 ne.clear()
 
@@ -91,7 +97,7 @@ class NEExtractor:
         self.named_entities = set(self.named_entities)
         self.named_entities = list(self.named_entities)
         self.named_entities.sort()
-        with open("entidades_nomeadas_baelor.csv", 'w', encoding="utf-8") as article_file:
+        with open("entidades_nomeadas.csv", 'w', encoding="utf-8") as article_file:
             for entidade in self.named_entities:
                 article_file.write("{0}\n".format(entidade))
 
@@ -108,13 +114,22 @@ class NEExtractor:
             for ne in test:
                 ne_test.append(ne)
             ne_test.sort()
-            print(ne_test)
         with open("tests/ne_baelor_s1e9_ordenado.csv", 'w') as test_file_write:
             for ne in ne_test:
                 test_file_write.write(ne)
 
 
-extractor = NEExtractor("second_processing/Baelor s1e9.txt")
+# extractor = NEExtractor("second_processing/Baelor s1e9_tests.txt")
+
+seasons_files = glob.glob("pre_processed_documents/*")
+for season in seasons_files:
+    season_name = os.path.basename(season)
+
+    episodes_files = glob.glob(season + "/*.txt")
+    for episode in episodes_files:
+        extractor = NEExtractor(episode)
+        # print(episode)
+    extractor.create_ne_file()
 
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
 # 873 entidades nomeadas
@@ -135,3 +150,9 @@ extractor = NEExtractor("second_processing/Baelor s1e9.txt")
 
 # sexta tentativa: migrando o codigo do java pro python
 # 103 entidades nomeadas
+
+# juntanto todos os documentos
+# 1296 entidades nomeadas
+
+# eliminando entidades nomeadas de tamanho menor que 1
+# 1295 entidades nomeadas
