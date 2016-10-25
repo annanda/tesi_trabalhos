@@ -12,9 +12,17 @@ class ArticleReader:
             lines = [line for line in lines if line]
 
             for i, line in enumerate(lines):
-                lines[i] = re.sub(r'”', '"', line)
-                lines[i] = re.sub(r'“', '"', line)
-                lines[i] = re.sub(r'’', '\'', line)
+                clean = line
+                clean = clean.replace("—", " - ")
+                clean = clean.replace("…", "... ")
+                clean = clean.replace("ʼ", "'")
+                clean = clean.replace("’", "'")  # não é o mesmo do que o de cima
+                clean = clean.replace("–", " - ")
+                clean = clean.replace("―", " - ")
+                clean = clean.replace("“", "\"")
+                clean = clean.replace("”", "\"")
+                clean = clean.replace("\u200B", "")
+                lines[i] = clean
 
             for i, line in enumerate(lines):
                 if line.endswith("Edit"):
@@ -36,6 +44,12 @@ class ArticleReader:
                     captured.append(line)
 
             captured = captured[1:]  # remove PlotEdit
+
+            for line in captured:
+                for char in line:
+                    if ord(char) > 256:
+                        i += 1
+                        print("({0}) is number {1} appears in {2}".format(char, ord(char), line))
 
             self.texto_pre_processado = "\n".join(captured)
 
