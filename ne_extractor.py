@@ -48,7 +48,8 @@ class NEExtractor:
                         ne = self.remove_unfinished_complements(ne)
                         named_entity = self.build_named_entity(ne)
                         # print("({2}){0} - {1}\n".format(named_entity, str(sentence), i))
-                        self.named_entities.append(named_entity)
+                        if len(named_entity) > 1:
+                            self.named_entities.append(named_entity)
 
                     ne.clear()
             if ne:
@@ -56,7 +57,8 @@ class NEExtractor:
                     ne = self.remove_unfinished_complements(ne)
                     named_entity = self.build_named_entity(ne)
                     # print("({2}){0} - {1}\n".format(named_entity, str(sentence), i))
-                    self.named_entities.append(named_entity)
+                    if len(named_entity) > 1:
+                        self.named_entities.append(named_entity)
 
                 ne.clear()
 
@@ -148,3 +150,9 @@ for season in seasons_files:
 
 # sexta tentativa: migrando o codigo do java pro python
 # 103 entidades nomeadas
+
+# juntanto todos os documentos
+# 1296 entidades nomeadas
+
+# eliminando entidades nomeadas de tamanho menor que 1
+# 1295 entidades nomeadas
