@@ -3,7 +3,7 @@ with open("entidades_nomeadas.csv", 'r') as test_file:
     novas_entidades_nomeadas =[]
     for i, ne in enumerate(entidades_nomeadas):
         ne_dividida = ne.split()
-        if ne_dividida[0] in ["Lady"]:
+        if ne_dividida[0] in ["Lady", "Prince", "Ser"]:
             if len(ne_dividida) > 1:
                 if ne_dividida[1] not in ["of"]:
                     print(ne_dividida[1:])
@@ -17,7 +17,7 @@ with open("entidades_nomeadas.csv", 'r') as test_file:
 print(novas_entidades_nomeadas)
 en = set(novas_entidades_nomeadas)
 en_2 = list(en)
-novas_entidades_nomeadas = set(novas_entidades_nomeadas)
+en_2.sort()
 # print(len(novas_entidades_nomeadas))
 with open("novas_entidades_nomeadas", 'w') as test_file_write:
     for ne in en_2:
@@ -28,3 +28,20 @@ print(len(en_2))
 # primeira tentativa de melhorar entidades nomeadas:
 # tira os Lady
 # 1284 entidades nomeadas (estava 1295)
+
+# segunda tentatica
+# tira os Prince
+# 1274 entidades nomeadas (estava 1284)
+
+# tirando as entidades nomeadas com tamanho menor que 3 caracteres
+# 1286 entidades nomeadas
+
+
+# terceira tentativa
+# depois de mudar o pre-processamento substituindo os caracteres ruins
+# tirando o Lady e Prince
+# 1265 entidades nomeadas (era 1274)
+
+# quarta tentativa
+# tirando o Ser da frente dos nomes
+# 1233 entidades nomeadas (era 1265)
