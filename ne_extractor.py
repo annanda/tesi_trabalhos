@@ -2,10 +2,13 @@ import nltk
 import re
 import glob
 import os.path
+from collections import Counter
 
 class NEExtractor:
 
     named_entities = []
+
+    info_about_named_entities = []
 
     def __init__(self, article_path):
         self.article = self.read_article(article_path)
@@ -49,7 +52,9 @@ class NEExtractor:
                         ne = self.remove_unfinished_complements(ne)
                         named_entity = self.build_named_entity(ne)
                         # print("({2}){0} - {1}\n".format(named_entity, str(sentence), i))
+
                         if len(named_entity) > 2:
+                            self.info_about_named_entities.append([self.pretty_print_tagged_sentence(ne), self.pretty_print_tagged_sentence(sentence), str(" ".join([word[0] for word in sentence]))])
                             self.named_entities.append(named_entity)
 
                     ne.clear()
@@ -58,10 +63,19 @@ class NEExtractor:
                     ne = self.remove_unfinished_complements(ne)
                     named_entity = self.build_named_entity(ne)
                     # print("({2}){0} - {1}\n".format(named_entity, str(sentence), i))
+
                     if len(named_entity) > 2:
+                        self.info_about_named_entities.append([self.pretty_print_tagged_sentence(ne), self.pretty_print_tagged_sentence(sentence), str(" ".join([word[0] for word in sentence]))])
                         self.named_entities.append(named_entity)
 
                 ne.clear()
+
+    def pretty_print_tagged_sentence(self, sentence):
+        result = []
+        for word in sentence:
+            result.append(word[0] + "_" + word[1])
+
+        return " ".join(result)
 
     def build_named_entity(self, ne):
         named_entity = " ".join([word[0] for word in ne])
@@ -95,6 +109,17 @@ class NEExtractor:
 
     def create_ne_file(self):
         # para nao repetir os elementos
+        counter = Counter(self.named_entities)
+        for i, named_entity in enumerate(self.named_entities):
+            freq = counter[named_entity]
+            self.info_about_named_entities[i] = [named_entity, str(freq)] + self.info_about_named_entities[i]
+
+        for info in self.info_about_named_entities:
+            str_info = []
+            for data in info:
+                str_info += ['"' + data + '"']
+            print(",".join(str_info))
+
         self.named_entities = set(self.named_entities)
         self.named_entities = list(self.named_entities)
         self.named_entities.sort()
@@ -120,7 +145,7 @@ class NEExtractor:
                 test_file_write.write(ne)
 
 
-# extractor = NEExtractor("second_processing/Baelor s1e9_tests.txt")
+# extractor = NEExtractor("pre_processed_documents/season_4/breaker_of_chains.txt")
 
 seasons_files = glob.glob("pre_processed_documents/*")
 for season in seasons_files:
@@ -130,7 +155,7 @@ for season in seasons_files:
     for episode in episodes_files:
         extractor = NEExtractor(episode)
         # print(episode)
-    extractor.create_ne_file()
+extractor.create_ne_file()
 
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
 # 873 entidades nomeadas
