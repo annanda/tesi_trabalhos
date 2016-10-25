@@ -3,7 +3,7 @@ with open("entidades_nomeadas.csv", 'r') as test_file:
     novas_entidades_nomeadas =[]
     for i, ne in enumerate(entidades_nomeadas):
         ne_dividida = ne.split()
-        if ne_dividida[0] in ["Lady", "Prince"]:
+        if ne_dividida[0] in ["Lady", "Prince", "Ser"]:
             if len(ne_dividida) > 1:
                 if ne_dividida[1] not in ["of"]:
                     print(ne_dividida[1:])
@@ -41,3 +41,7 @@ print(len(en_2))
 # depois de mudar o pre-processamento substituindo os caracteres ruins
 # tirando o Lady e Prince
 # 1265 entidades nomeadas (era 1274)
+
+# quarta tentativa
+# tirando o Ser da frente dos nomes
+# 1233 entidades nomeadas (era 1265)
