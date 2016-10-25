@@ -3,7 +3,7 @@ with open("entidades_nomeadas.csv", 'r') as test_file:
     novas_entidades_nomeadas =[]
     for i, ne in enumerate(entidades_nomeadas):
         ne_dividida = ne.split()
-        if ne_dividida[0] in ["Lady", "Prince", "Ser", "Lord"]:
+        if ne_dividida[0] in ["Lady", "Prince", "Ser", "Lord", "Lords"]:
             if len(ne_dividida) > 1:
                 if ne_dividida[1] not in ["of", "'s"]:
                     print(ne_dividida[1:])
@@ -50,3 +50,7 @@ print(len(en_2))
 # Tira Lord da frente dos nomes
 # 1199 entidades
 # adiciona o 's na lista dos segundos a se ignorar
+
+# sexta tentativa
+# Tira Lords da frente dos nomes
+# 1197 entidades
