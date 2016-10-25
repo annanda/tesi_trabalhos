@@ -95,6 +95,7 @@ Black Rat
 Black Walder
 Black Walder Rivers
 Blackfish
+Blackmont
 Blackwater
 Blackwater Bay
 Bloody Gate
@@ -139,6 +140,7 @@ Catelyn
 Catelyn Stark
 Cersei
 Cersei Lannister
+Cerwyn
 Cerwyns
 Chamber of the Painted Table
 Children
@@ -149,9 +151,20 @@ Clegane
 Cleon
 Columns
 Commander
+Commander Alliser Thorne
+Commander Barristan Selmy
+Commander Gerold Hightower
 Commander Janos Slynt
+Commander Jeor Mormont
+Commander Jeor Mormont of the Night 's Watch
+Commander Jon Snow
 Commander Mormont
+Commander Snow
+Commander of Robert Baratheon 's Kingsguard
 Commander of the City Watch
+Commander of the King 's Landing City Watch
+Commander of the Kingsguard
+Commander of the Night 's Watch
 Commander of the Shadow Tower
 Common Tongue
 Common Tongue of Westeros
@@ -562,62 +575,7 @@ Loraq
 Loras
 Loras Tyrell
 Lorch
-Lord
 Lord 's Chosen
-Lord Baelish
-Lord Beric Dondarrion
-Lord Blackmont
-Lord Bolton
-Lord Cerwyn
-Lord Commander
-Lord Commander Alliser Thorne
-Lord Commander Barristan Selmy
-Lord Commander Gerold Hightower
-Lord Commander Jeor Mormont
-Lord Commander Jeor Mormont of the Night 's Watch
-Lord Commander Jon Snow
-Lord Commander Mormont
-Lord Commander Snow
-Lord Commander of Robert Baratheon 's Kingsguard
-Lord Commander of the King 's Landing City Watch
-Lord Commander of the Kingsguard
-Lord Commander of the Night 's Watch
-Lord Eddard
-Lord Eddard Stark
-Lord Frey
-Lord Hoster Tully
-Lord Howland Reed
-Lord Janos Slynt
-Lord Jon Arryn
-Lord Karstark
-Lord Mace Tyrell
-Lord Paramount of the Vale
-Lord Petyr
-Lord Petyr Baelish
-Lord Protector of the Realm
-Lord Randyll Tarly
-Lord Renly
-Lord Renly Baratheon
-Lord Rickard
-Lord Rickard Karstark
-Lord Robin Arryn
-Lord Roose Bolton
-Lord Roose Bolton of the Dreadfort
-Lord Royce
-Lord Selwyn
-Lord Selwyn Tarth
-Lord Selwyn of Tarth
-Lord Snow
-Lord Stannis
-Lord Stark
-Lord Tywin
-Lord Tywin Lannister
-Lord Varys
-Lord Walder
-Lord Walder Frey
-Lord Whent of Harrenhal
-Lord Yohn
-Lord Yohn Royce
 Lord of Bones
 Lord of Harrenhal
 Lord of Light
@@ -804,6 +762,7 @@ Othell Yarwyck
 Othor
 Outside
 Oxcross
+Paramount of the Vale
 Pentos
 Pentoshi
 Petyr
@@ -924,6 +883,7 @@ Rodrik
 Rodrik Cassel
 Roose
 Roose Bolton
+Roose Bolton of the Dreadfort
 Rorge
 Ros
 Ros of
@@ -958,6 +918,9 @@ Savior of the City
 Savo
 Second Sons
 Selmy
+Selwyn
+Selwyn Tarth
+Selwyn of Tarth
 Selyse
 Sept
 Septa Mordane
@@ -1185,6 +1148,7 @@ Westeros
 Westerosi
 Westoros
 When Cersei
+Whent of Harrenhal
 Whispering Wood
 White
 White Harbor
@@ -1223,6 +1187,8 @@ Yara
 Yara Greyjoy
 Yezzan
 Ygritte
+Yohn
+Yohn Royce
 Yoren
 Yoren of the Night 's Watch
 Young Bran
