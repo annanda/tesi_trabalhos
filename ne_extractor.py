@@ -14,10 +14,11 @@ class NEExtractor:
         # self.read_test_file()
 
     def nominated_entities(self):
+        lines = self.article.split("\n")
 
-        sentences = re.split(r'[\.\n]', self.article)
-        sentences = [sentence.strip(" '") for sentence in sentences]
-        sentences = [sentence for sentence in sentences if sentence]
+        sentences = []
+        for line in lines:
+            sentences += nltk.sent_tokenize(line)
 
         tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
         tagged_sentences = [nltk.pos_tag(sentence) for sentence in tokenized_sentences]
