@@ -1,59 +1,57 @@
 import re
 import glob
+import os.path
 
 
 class ArticleReader:
-
     def __init__(self, from_path):
-        self.title = None
-        self.texto = None
-        self.texto_final = None
-        self.conteudo = []
-        with open(from_path, 'r') as f:
-            text_lines = f.readlines()
-            text_file = " ".join(text_lines)
-            self.extrai_titulo(text_file)
-            self.corta_edit(text_lines)
-            self.corta_image_galerry()
+        self.texto_pre_processado = None
+        with open(from_path, 'r', encoding="utf-8") as file:
+            lines = file.readlines()
+            lines = [line.strip('\n').strip() for line in lines]
+            lines = [line for line in lines if line]
 
-    def extrai_titulo(self, texto):
-        regex_1 = re.compile(r'"(.+)"')
-        list = re.findall(regex_1, texto)
-        self.title = list[0]
+            for i, line in enumerate(lines):
+                lines[i] = re.sub(r'”', '"', line)
+                lines[i] = re.sub(r'“', '"', line)
+                lines[i] = re.sub(r'’', '\'', line)
 
-    def corta_image_galerry(self):
-        regex_2 = re.compile(r'(".*)Ima', flags=re.DOTALL)
-        list_2 = re.findall(regex_2, self.texto_final)
-        if list_2:
-            self.texto_final = list_2[0]
+            for i, line in enumerate(lines):
+                if line.endswith("Edit"):
+                    lines[i] = line[:-4].strip()
 
-    def corta_edit(self, text_lines):
-        for line in text_lines:
-            regex_3 = re.compile(r'^.*Edit')
-            regex_4 = re.compile(r'(^.*)Edit')
-            list_1 = re.findall(regex_3, line)
-            list_2 = re.findall(regex_4, line)
+            captured = []
+            capture = False
+            for line in lines:
+                if line == "Plot":
+                    capture = True
 
-            if list_1:
-                line = re.sub(regex_3, list_2[0], line)
-            if line != '\n':
-                self.conteudo.append(line)
-        self.texto_final = " ".join(self.conteudo)
+                if line == "Summary":
+                    continue
 
-    def save_articles(self, to):
-        with open(to + "/" + self.title + ".txt", 'w') as article_file:
-            article_file.write(self.texto_final)
+                if line == "Appearances" or line == "Recap":
+                    capture = False
 
-all_seasons_files = []
+                if capture:
+                    captured.append(line)
 
-for season in glob.glob("raw_documents/*"):
-    all_seasons_files.append(season)
+            captured = captured[1:]  # remove PlotEdit
 
-for season in all_seasons_files:
-    file_list = glob.glob(season + "/*.txt")
-    # print(file_list)
-    regex = re.compile(r'raw_documents\/(season_[1-6])')
-    season_number = re.findall(regex, season)
-    for episode in file_list:
+            self.texto_pre_processado = "\n".join(captured)
+
+    def save_pre_processed_file(self, to):
+        with open(to, 'w+', encoding="utf-8") as file:
+            file.write(self.texto_pre_processado)
+
+
+seasons_files = glob.glob("raw_documents/*")
+for season in seasons_files:
+    season_name = os.path.basename(season)
+
+    episodes_files = glob.glob(season + "/*.txt")
+    for episode in episodes_files:
+        episode_name = os.path.basename(episode)
+        save_dir = os.path.join("pre_processed_documents", season_name)
+        os.makedirs(save_dir, exist_ok=True)
         article = ArticleReader(episode)
-        article.save_articles("first_processing/" + season_number[0])
+        article.save_pre_processed_file(os.path.join(save_dir, episode_name))
