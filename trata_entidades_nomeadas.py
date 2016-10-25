@@ -33,3 +33,11 @@ print(len(en_2))
 # tira os Prince
 # 1274 entidades nomeadas (estava 1284)
 
+# tirando as entidades nomeadas com tamanho menor que 3 caracteres
+# 1286 entidades nomeadas
+
+
+# terceira tentativa
+# depois de mudar o pre-processamento substituindo os caracteres ruins
+# tirando o Lady e Prince
+# 1265 entidades nomeadas (era 1274)
