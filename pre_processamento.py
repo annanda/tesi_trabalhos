@@ -45,12 +45,6 @@ class ArticleReader:
 
             captured = captured[1:]  # remove PlotEdit
 
-            for line in captured:
-                for char in line:
-                    if ord(char) > 256:
-                        i += 1
-                        print("({0}) is number {1} appears in {2}".format(char, ord(char), line))
-
             self.texto_pre_processado = "\n".join(captured)
 
     def save_pre_processed_file(self, to):
