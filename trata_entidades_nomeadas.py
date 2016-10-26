@@ -42,12 +42,16 @@ with open("novas_entidades_nomeadas.csv", 'r') as test_file:
             entidades_um_nome.append(ne.replace("\n", ""))
 entidades_relacionadas = {}
 
-with open("entidades_nomeadas_relacionadas", 'w') as test_file:
+with open("entidades_nomeadas_relacionadas_2", 'w') as test_file:
     for um_nome in entidades_um_nome:
-        entidades_relacionadas[um_nome] = process.extract(um_nome, entidades_mais_nome, scorer=fuzz.partial_ratio, limit=4)
+        entidades_relacionadas[um_nome] = []
+        for nome_composto in entidades_mais_nome:
+            if re.search(um_nome, nome_composto):
+                entidades_relacionadas[um_nome].append(nome_composto)
+        for nome_relacionado in entidades_relacionadas[um_nome]:
+            entidades_mais_nome.remove(nome_relacionado)
         test_file.write("Entidade: " + um_nome + "\n")
-        test_file.write("Relacionadas " + str(entidades_relacionadas[um_nome]) + "\n\n")
-
+        test_file.write("Relacionados: " + str(entidades_relacionadas[um_nome]) + "\n\n")
 
 
 # primeira tentativa de melhorar entidades nomeadas:
@@ -93,3 +97,7 @@ with open("entidades_nomeadas_relacionadas", 'w') as test_file:
 # RUIM -->
 # Entidade:  Aggo
 # Relacionadas  [('Aegon I Targaryen', 50), ('Aegon Targaryen', 50), ('Aegon the Conquer', 50), ('Aegon the Conqueror', 50)]
+
+
+# tentativa de apenas pegar a substring para comparar uma NE de um nome só com NE de nomes compostos
+#
