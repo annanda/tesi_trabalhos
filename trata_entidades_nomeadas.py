@@ -50,8 +50,9 @@ with open("entidades_nomeadas_relacionadas_2", 'w') as test_file:
                 entidades_relacionadas[um_nome].append(nome_composto)
         for nome_relacionado in entidades_relacionadas[um_nome]:
             entidades_mais_nome.remove(nome_relacionado)
-        test_file.write("Entidade: " + um_nome + "\n")
-        test_file.write("Relacionados: " + str(entidades_relacionadas[um_nome]) + "\n\n")
+        if entidades_relacionadas[um_nome]:
+            test_file.write("Entidade: " + um_nome + "\n")
+            test_file.write("Relacionados: " + str(entidades_relacionadas[um_nome]) + "\n\n")
 
 
 # primeira tentativa de melhorar entidades nomeadas:
