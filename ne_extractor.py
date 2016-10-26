@@ -155,3 +155,6 @@ extractor.create_ne_file()
 
 # eliminando entidades nomeadas de tamanho menor que 1
 # 1295 entidades nomeadas
+
+# ignorando sempre a primeira palavra de cada sentenca
+# 1227 entidades nomeadas

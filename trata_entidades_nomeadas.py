@@ -1,6 +1,6 @@
 with open("entidades_nomeadas.csv", 'r') as test_file:
     entidades_nomeadas = test_file.readlines()
-    novas_entidades_nomeadas =[]
+    novas_entidades_nomeadas = []
     for i, ne in enumerate(entidades_nomeadas):
         ne_dividida = ne.split()
         if ne_dividida[0] in ["Lady", "Prince", "Ser", "Lord", "Lords"]:
@@ -54,3 +54,7 @@ print(len(en_2))
 # sexta tentativa
 # Tira Lords da frente dos nomes
 # 1197 entidades
+
+# setima tentativa
+# usa o ne_extractor ignorando sempre a primeira palavra da sentenca
+# 1138 entidades
