@@ -4,17 +4,18 @@ import glob
 import os.path
 from collections import Counter
 
-class NEExtractor:
 
+class NEExtractor:
     named_entities = []
 
     info_about_named_entities = []
 
     def __init__(self, article_path):
-        self.article = self.read_article(article_path)
+
+        with open(article_path, 'r', encoding="utf-8") as article:
+            self.article = article.read()
+
         self.get_ne(self.nominated_entities())
-        # self.create_ne_file()
-        # self.read_test_file()
 
     def nominated_entities(self):
         lines = self.article.split("\n")
@@ -28,69 +29,48 @@ class NEExtractor:
 
         return tagged_sentences
 
-    def read_article(self, path):
-        with open(path, 'r', encoding="utf-8") as article:
-            return article.read()
-
     def get_ne(self, tagged_sentences):
         ne = []
         for i, sentence in enumerate(tagged_sentences):
             for j, tagged_word in enumerate(sentence):
 
-                if self.is_first_letter_upper(tagged_word):
-                    if self.is_first_word_and_not_np(j, tagged_word):
-                        continue
-                    ne.append(tagged_word)
+                if j == 0:
                     continue
+
+                if self.is_first_letter_upper(tagged_word):
+                    ne.append(tagged_word)
+                    if j != len(sentence) - 1:
+                        continue
 
                 if ne and self.is_complement(tagged_word):
                     ne.append(tagged_word)
-                    continue
+                    if j != len(sentence) - 1:
+                        continue
 
                 if ne:
                     if self.has_np(ne):
                         ne = self.remove_unfinished_complements(ne)
-                        named_entity = self.build_named_entity(ne)
-                        # print("({2}){0} - {1}\n".format(named_entity, str(sentence), i))
+                        named_entity = self.sentence_text(ne)
+
+                        # resolve quando o 's no final de uma palavra não é separado em outro token
+                        if len(named_entity) > 2 and named_entity.endswith("'s"):
+                            named_entity = named_entity[:-2]
 
                         if len(named_entity) > 2:
-                            self.info_about_named_entities.append([self.pretty_print_tagged_sentence(ne), self.pretty_print_tagged_sentence(sentence), str(" ".join([word[0] for word in sentence]))])
+                            # self.info_about_named_entities.append([self.sentence_text_with_tags(ne), self.sentence_text_with_tags(sentence), self.sentence_text(sentence)])
                             self.named_entities.append(named_entity)
 
                     ne.clear()
-            if ne:
-                if self.has_np(ne):
-                    ne = self.remove_unfinished_complements(ne)
-                    named_entity = self.build_named_entity(ne)
-                    # print("({2}){0} - {1}\n".format(named_entity, str(sentence), i))
 
-                    if len(named_entity) > 2:
-                        self.info_about_named_entities.append([self.pretty_print_tagged_sentence(ne), self.pretty_print_tagged_sentence(sentence), str(" ".join([word[0] for word in sentence]))])
-                        self.named_entities.append(named_entity)
-
-                ne.clear()
-
-    def pretty_print_tagged_sentence(self, sentence):
+    def sentence_text_with_tags(self, sentence):
         result = []
         for word in sentence:
             result.append(word[0] + "_" + word[1])
 
         return " ".join(result)
 
-    def build_named_entity(self, ne):
-        named_entity = " ".join([word[0] for word in ne])
-
-        # resolve quando o 's no final de uma palavra não é separado em outro token
-        if len(named_entity) > 2 and named_entity.endswith("'s"):
-            named_entity = named_entity[:-2]
-
-        return named_entity
-
-    def is_first_word_and_not_np(self, i, word):
-        tag = word[1]
-        if i == 0 and not tag == 'NN' and not tag == 'NNP':
-            return True
-        return False
+    def sentence_text(self, sentence):
+        return " ".join([word[0] for word in sentence])
 
     def is_complement(self, word):
         text = word[0]
@@ -107,42 +87,35 @@ class NEExtractor:
                 return True
         return False
 
+    def remove_unfinished_complements(self, ne):
+        ne_without_trailing_complements = list(ne)
+        for i in range(len(ne)-1, 0, -1):
+            if self.is_complement(ne[i]):
+                ne_without_trailing_complements = ne_without_trailing_complements[:-1]
+            else:
+                break
+        return ne_without_trailing_complements
+
     def create_ne_file(self):
+
+        # counter = Counter(self.named_entities)
+        # for i, named_entity in enumerate(self.named_entities):
+        #     freq = counter[named_entity]
+        #     self.info_about_named_entities[i] = [named_entity, str(freq)] + self.info_about_named_entities[i]
+        #
+        # for info in self.info_about_named_entities:
+        #     str_info = []
+        #     for data in info:
+        #         str_info += ['"' + data + '"']
+        #     print(",".join(str_info))
+
         # para nao repetir os elementos
-        counter = Counter(self.named_entities)
-        for i, named_entity in enumerate(self.named_entities):
-            freq = counter[named_entity]
-            self.info_about_named_entities[i] = [named_entity, str(freq)] + self.info_about_named_entities[i]
-
-        for info in self.info_about_named_entities:
-            str_info = []
-            for data in info:
-                str_info += ['"' + data + '"']
-            print(",".join(str_info))
-
         self.named_entities = set(self.named_entities)
         self.named_entities = list(self.named_entities)
         self.named_entities.sort()
         with open("entidades_nomeadas.csv", 'w', encoding="utf-8") as article_file:
             for entidade in self.named_entities:
                 article_file.write("{0}\n".format(entidade))
-
-    def remove_unfinished_complements(self, ne):
-        if self.is_complement(ne[-1]):
-            return ne[:-1]
-        else:
-            return ne
-
-    def read_test_file(self):
-        with open("tests/ne_baelor_s1e9.csv", 'r') as test_file:
-            test = test_file.readlines()
-            ne_test = []
-            for ne in test:
-                ne_test.append(ne)
-            ne_test.sort()
-        with open("tests/ne_baelor_s1e9_ordenado.csv", 'w') as test_file_write:
-            for ne in ne_test:
-                test_file_write.write(ne)
 
 
 # extractor = NEExtractor("pre_processed_documents/season_4/breaker_of_chains.txt")
