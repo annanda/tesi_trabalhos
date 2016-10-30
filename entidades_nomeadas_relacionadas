@@ -1,0 +1,1596 @@
+Entidade: Aegon
+Relacionadas [('Aegon I Targaryen', 80), ('Aegon Targaryen', 80), ('Aegon the Conquer', 80), ('Aegon the Conqueror', 80)]
+
+Entidade: Aemon
+Relacionadas [('Aemon Sam', 80), ('Aemon Targaryen', 80), ('Maester Aemon', 80), ('King Stannis Baratheon', 67)]
+
+Entidade: Aeron
+Relacionadas [('Aeron Greyjoy', 80), ('Euron Greyjoy', 80), ('King Stannis Baratheon', 67), ('Not Theon', 67)]
+
+Entidade: Aerys
+Relacionadas [('Aerys Targaryen', 80), ('Aerys the Lannisters', 80), ('Daenerys Stormborn', 80), ('Daenerys Stormborn of House Targaryen', 80)]
+
+Entidade: Aggo
+Relacionadas [('Aegon I Targaryen', 50), ('Aegon Targaryen', 50), ('Aegon the Conquer', 50), ('Aegon the Conqueror', 50)]
+
+Entidade: Ahko
+Relacionadas [('Alliser Thorne', 50), ('Areo Hotah', 50), ('Battle of Ashford', 50), ('Belicho Paenymion', 50)]
+
+Entidade: Akho
+Relacionadas [('Alliser Thorne', 50), ('Areo Hotah', 50), ('Battle of Ashford', 50), ('Belicho Paenymion', 50)]
+
+Entidade: Alayne
+Relacionadas [('Arthur Dayne', 67), ('Brother Lancel', 67), ('Gregor Clegane', 67), ('House Clegane', 67)]
+
+Entidade: Alliser
+Relacionadas [('Alliser Thorne', 86), ('Commander Alliser Thorne', 86), ('Denys Mallister', 86), ('Kraznys The Unsullied', 62)]
+
+Entidade: Alton
+Relacionadas [('Alton Lannister', 80), ('House Bolton', 80), ('Ramsay Bolton', 80), ('Roose Bolton', 80)]
+
+Entidade: Amory
+Relacionadas [('Amory Lorch', 80), ('Commander Jeor Mormont', 60), ("Commander Jeor Mormont of the Night 's Watch", 60), ('Commander Mormont', 60)]
+
+Entidade: Anara
+Relacionadas [('Aegon I Targaryen', 60), ('Aegon Targaryen', 60), ('Aemon Targaryen', 60), ('Aerys Targaryen', 60)]
+
+Entidade: Anguy
+Relacionadas [('Common Tongue', 60), ('Common Tongue of Westeros', 60), ('King Tyrion Lannister', 60), ('Old Tongue', 60)]
+
+Entidade: Anyone
+Relacionadas [('Belicho Paenymion', 67), ('Dragonstone Isle', 67), ('House Baratheon of Dragonstone', 67), ('No One', 67)]
+
+Entidade: Arbor
+Relacionadas [('Daenerys Stormborn', 80), ('Daenerys Stormborn of House Targaryen', 80), ('White Harbor', 80), ('Aegon the Conqueror', 67)]
+
+Entidade: Areo
+Relacionadas [('Areo Hotah', 75), ('Gregor Clegane', 75), ('Mandon Moore of the Kingsguard', 75), ('Alliser Thorne', 57)]
+
+Entidade: Armeca
+Relacionadas [("Shireen 's Greyscale", 67), ('Dagmer Cleftjaw', 50), ('Free Cities', 50), ('Free City of Braavos', 50)]
+
+Entidade: Arry
+Relacionadas [('House Arryn', 75), ('Jon Arryn', 75), ('Lysa Arryn', 75), ('Robin Arryn', 75)]
+
+Entidade: Arryn
+Relacionadas [('House Arryn', 80), ('Jon Arryn', 80), ('Lysa Arryn', 80), ('Robin Arryn', 80)]
+
+Entidade: Arthur
+Relacionadas [('Arthur Dayne', 83), ('Alliser Thorne', 67), ('Book of Brothers', 67), ('Brother Lancel', 67)]
+
+Entidade: Arya
+Relacionadas [('Arya Stark', 75), ('Royal Fleet', 75), ('House Frey', 57), ('King Joffrey', 57)]
+
+Entidade: Arya/Lanna
+Relacionadas [('Aunt Lyanna', 59), ('Lyanna Mormont', 50), ('Lyanna Stark', 50), ('Martyn Lannister', 50)]
+
+Entidade: Ask
+Relacionadas [("Commander of Robert Baratheon 's Kingsguard", 67), ("Craster 's Keep", 67), ('Crasters Keep', 67), ('Skirling Pass', 67)]
+
+Entidade: Asshai
+Relacionadas [('Quaithe of Asshai', 83), ('Princess Shireen', 67), ('Princess Shireen Baratheon', 67), ('Princess Shireen of House Baratheon', 67)]
+
+Entidade: Astapor
+Relacionadas [('Good Masters of Astapor', 86), ('Sack of Astapor', 86), ('Seven-Pointed Star', 67), ('Arya Stark', 62)]
+
+Entidade: Baelish
+Relacionadas [('Baelish At Winterfell', 86), ('House Baelish', 86), ('Petyr Baelish', 86), ('Queen Talisa', 62)]
+
+Entidade: Baelor
+Relacionadas [('Baelor the Blessed', 83), ('Great Sept of Baelor', 83), ('House Florent', 67), ('Khal Moro', 67)]
+
+Entidade: Balon
+Relacionadas [('Alton Lannister', 80), ('Balon Greyjoy', 80), ('Balon King of the Iron Islands', 80), ('Karlon Stark', 80)]
+
+Entidade: Bank
+Relacionadas [('Iron Bank', 75), ('Iron Bank of Braavos', 75), ('Planky Town', 75), ('Faceless Man', 57)]
+
+Entidade: Bannen
+Relacionadas [('Brotherhood Without Banners', 67), ('Karl Tanner', 67), ('Gregor Clegane', 60), ('House Clegane', 60)]
+
+Entidade: Banners
+Relacionadas [('Brotherhood Without Banners', 86), ('Karl Tanner', 77), ('Commander Snow', 71), ('Daenerys Stormborn', 71)]
+
+Entidade: Baratheon
+Relacionadas [("Commander of Robert Baratheon 's Kingsguard", 89), ('House Baratheon', 89), ('House Baratheon of Dragonstone', 89), ('Joffrey Baratheon', 89)]
+
+Entidade: Baratheons
+Relacionadas [('House Baratheon', 84), ('Joffrey Baratheon', 84), ('King Joffrey Baratheon', 84), ('King Renly Baratheon', 84)]
+
+Entidade: Barra
+Relacionadas [('Aegon I Targaryen', 60), ('Aegon Targaryen', 60), ('Aemon Targaryen', 60), ('Aerys Targaryen', 60)]
+
+Entidade: Barristan
+Relacionadas [('Barristan Selmy', 89), ('Commander Barristan Selmy', 89), ('Bear Island', 67), ('Ellaria Sand', 67)]
+
+Entidade: Battle
+Relacionadas [('Battle of Ashford', 83), ('Battle of Castle Black', 83), ('Battle of Oxcross', 83), ('Battle of Stone Mill', 83)]
+
+Entidade: Benjen
+Relacionadas [('Benjen Stark', 83), ('Uncle Benjen', 83), ('Houses Reyne', 60), ('Gregor Clegane', 55)]
+
+Entidade: Beric
+Relacionadas [('Beric Dondarrion', 80), ('Battle of the Whispering Wood', 60), ('Bear Island', 60), ('Belicho Paenymion', 60)]
+
+Entidade: Bert
+Relacionadas [('After Tommen', 75), ('Alliser Thorne', 75), ('Commander Alliser Thorne', 75), ("Commander of Robert Baratheon 's Kingsguard", 75)]
+
+Entidade: Beyond
+Relacionadas [('Beyond the Wall', 83), ('King Beyond the Wall', 83), ("King-Beyond-the-Wall 's Camp", 83), ('King-Beyond-the-Wall Mance Rayder', 83)]
+
+Entidade: Bianca
+Relacionadas [('High Valyrian', 60), ('Low Valyrian', 60), ('Stark Valyrian', 60), ('Faith Militant', 55)]
+
+Entidade: Biter
+Relacionadas [('Aerys the Lannisters', 80), ('Alton Lannister', 80), ('As Cersei Lannister', 80), ('Baelish At Winterfell', 80)]
+
+Entidade: Blackfish
+Relacionadas [('The Blackfish', 89), ('Battle of Castle Black', 57), ('Castle Black', 57), ('Gold Cloaks', 57)]
+
+Entidade: Blackmont
+Relacionadas [('Castle Black of the White Walker', 67), ('Battle of Castle Black', 57), ('Castle Black', 57), ('House of Black', 57)]
+
+Entidade: Blackwater
+Relacionadas [('Battle of the Blackwater', 90), ('Blackwater Bay', 90), ('Bronn of the Blackwater', 90), ('Black Walder', 70)]
+
+Entidade: Bolton
+Relacionadas [('House Bolton', 83), ('Ramsay Bolton', 83), ('Roose Bolton', 83), ('Roose Bolton of the Dreadfort', 83)]
+
+Entidade: Boltons
+Relacionadas [('House Bolton', 77), ('Ramsay Bolton', 77), ('Roose Bolton', 77), ('Walda Bolton', 77)]
+
+Entidade: Boy
+Relacionadas [('Aeron Greyjoy', 67), ('Amory Lorch', 67), ('Balon Greyjoy', 67), ('Bloody Gate', 67)]
+
+Entidade: Braavos
+Relacionadas [('Braavosi Water Dancer', 86), ('First Sword of Braavos', 86), ('Free City of Braavos', 86), ('Iron Bank of Braavos', 86)]
+
+Entidade: Braavosi
+Relacionadas [('Braavosi Water Dancer', 88), ('First Sword of Braavos', 80), ('Free City of Braavos', 80), ('Iron Bank of Braavos', 80)]
+
+Entidade: Braavosi-style
+Relacionadas [('Braavosi Water Dancer', 64), ('First Sword of Braavos', 57), ('Free City of Braavos', 57), ('Iron Bank of Braavos', 57)]
+
+Entidade: Bran
+Relacionadas [('Bran Stark', 75), ('Brandon the Builder', 75), ('Doran Martell', 75), ('Doran Martell of Dorne', 75)]
+
+Entidade: Brandon
+Relacionadas [('Brandon the Builder', 86), ('Mandon Moore', 71), ('Mandon Moore of the Kingsguard', 71), ('No One', 60)]
+
+Entidade: Bread
+Relacionadas [('Roose Bolton of the Dreadfort', 80), ('Army of the Dead', 60), ('Brandon the Builder', 60), ('Crossroads Inn', 60)]
+
+Entidade: Brienne
+Relacionadas [('Brienne of Tarth', 86), ('No One', 67), ('Battle of the Trident', 62), ('Green Fork of the River Trident', 62)]
+
+Entidade: Bronn
+Relacionadas [('Bronn of the Blackwater', 80), ('Aeron Greyjoy', 60), ('Balon King of the Iron Islands', 60), ('Beric Dondarrion', 60)]
+
+Entidade: Brotherhood
+Relacionadas [('Brotherhood Without Banners', 91), ('The Brotherhood', 91), ('The Hound', 71), ('Mother of Dragons', 64)]
+
+Entidade: Brusco
+Relacionadas [('Beric Dondarrion', 50), ('Commander Snow', 50), ('Crossroads Inn', 50), ('Dolorous Edd', 50)]
+
+Entidade: Brynden
+Relacionadas [('Brynden Tully', 86), ('Aegon I Targaryen', 67), ('Aegon Targaryen', 67), ('Aemon Targaryen', 67)]
+
+Entidade: Calla
+Relacionadas [('Salladhor Saan', 80), ('Beyond the Wall', 67), ('Duncan the Tall', 67), ("Eyrie 's High Hall", 67)]
+
+Entidade: Capital
+Relacionadas [('At Karl', 57), ('Barristan Selmy', 57), ('Castle Black of the White Walker', 57), ('Commander Barristan Selmy', 57)]
+
+Entidade: Captain
+Relacionadas [('Acting Hand of the King', 57), ('Baelish At Winterfell', 57), ('Chamber of the Painted Table', 57), ('Daario Naharis', 57)]
+
+Entidade: Castle
+Relacionadas [('Battle of Castle Black', 83), ('Castle Black', 83), ('Castle Black of the White Walker', 83), ('Castle Stokeworth', 83)]
+
+Entidade: Cat
+Relacionadas [('Acting Hand of the King', 67), ('After Tommen', 67), ('Alton Lannister', 67), ('Arthur Dayne', 67)]
+
+Entidade: Catelyn
+Relacionadas [('Catelyn Stark', 86), ('Casterly Rock', 71), ('Doran Martell', 62), ('Elia Martell', 62)]
+
+Entidade: Cersei
+Relacionadas [('As Cersei Lannister', 83), ('Cersei Lannister', 83), ('Queen Cersei', 83), ('Queen Cersei Lannister', 83)]
+
+Entidade: Cerwyn
+Relacionadas [('Meryn Trant', 67), ('Meryn Trant Ser Meryn Trant', 67), ('Meryn Trant of the Kingsguard', 67), ('Oberyn Martell', 67)]
+
+Entidade: Cerwyns
+Relacionadas [('King Aerys', 67), ('Queen Daenerys', 67), ('Aerys Targaryen', 57), ('Aerys the Lannisters', 57)]
+
+Entidade: Children
+Relacionadas [('Children of the Forest', 88), ('Princess Shireen', 67), ('Princess Shireen Baratheon', 62), ('Princess Shireen of House Baratheon', 62)]
+
+Entidade: Citadel
+Relacionadas [('The Citadel', 86), ('Essence of Nightshade', 62), ('Barristan Selmy', 57), ('Commander Barristan Selmy', 57)]
+
+Entidade: Clegane
+Relacionadas [('Gregor Clegane', 86), ('House Clegane', 86), ('Sandor Clegane', 86), ('Brother Lancel', 57)]
+
+Entidade: Cleon
+Relacionadas [('Aegon I Targaryen', 60), ('Aegon Targaryen', 60), ('Aegon the Conquer', 60), ('Aegon the Conqueror', 60)]
+
+Entidade: Commander
+Relacionadas [('Commander Alliser Thorne', 89), ('Commander Barristan Selmy', 89), ('Commander Gerold Hightower', 89), ('Commander Janos Slynt', 89)]
+
+Entidade: Conclave
+Relacionadas [("Liberation of Slaver 's Bay", 62), ('Small Council', 57), ('Alliser Thorne', 50), ('Alton Lannister', 50)]
+
+Entidade: Corbray
+Relacionadas [('Vance Corbray', 86), ('Blackwater Bay', 62), ('Slavers Bay', 62), ('Daenerys Stormborn', 57)]
+
+Entidade: Council
+Relacionadas [('Small Council', 86), ('Balon King of the Iron Islands', 57), ('Battle of Stone Mill', 57), ('Dragonstone Isle', 57)]
+
+Entidade: Crag
+Relacionadas [('Dance of the Dragons', 75), ('Dragon Queen', 75), ('Dragonstone Isle', 75), ('First Ranger', 75)]
+
+Entidade: Crane
+Relacionadas [('First Ranger', 80), ("First Ranger of the Night 's Watch", 80), ('Septa Mordane', 80), ('The Book of the Stranger', 80)]
+
+Entidade: Craster
+Relacionadas [("Craster 's Keep", 86), ('Crasters Keep', 86), ('Casterly Rock', 71), ('Eastern Road', 71)]
+
+Entidade: Cressen
+Relacionadas [('Essence of Nightshade', 71), ('Faceless Men', 71), ('Queen of Meereen', 67), ('The Thirteen', 67)]
+
+Entidade: Cripples
+Relacionadas [('Summer Isles', 67), ('Drowned Priest', 57), ('Mountain That Rides', 57), ('Red Priest', 57)]
+
+Entidade: Crossroads
+Relacionadas [('Crossroads Inn', 90), ('Eastern Road', 56), ('Northern Lords', 56), ('Battle of Oxcross', 53)]
+
+Entidade: Crow
+Relacionadas [('Crown Prince Rhaegar Targaryen', 75), ('Drowned God', 75), ('Drowned Men', 75), ('Drowned Priest', 75)]
+
+Entidade: Crown
+Relacionadas [('Crown Prince Rhaegar Targaryen', 80), ('Drowned God', 80), ('Drowned Men', 80), ('Drowned Priest', 80)]
+
+Entidade: Crownlands
+Relacionadas [('Balon King of the Iron Islands', 70), ('Iron Islands', 70), ('King of the Iron Islands', 70), ('Shadow Lands', 70)]
+
+Entidade: Daario
+Relacionadas [('Daario Naharis', 83), ('Beric Dondarrion', 67), ('Old Ghiscari', 55), ('Aeron Greyjoy', 50)]
+
+Entidade: Daenerys
+Relacionadas [('Daenerys Stormborn', 88), ('Daenerys Stormborn of House Targaryen', 88), ('Daenerys Targaryen', 88), ('Daenerys the Unburnt', 88)]
+
+Entidade: Daenerys'
+Relacionadas [('Queen Daenerys', 82), ('Daenerys Stormborn', 78), ('Daenerys Stormborn of House Targaryen', 78), ('Daenerys Targaryen', 78)]
+
+Entidade: Dagmer
+Relacionadas [('Dagmer Cleftjaw', 83), ('First Ranger', 73), ('The Book of the Stranger', 73), ('Chamber of the Painted Table', 67)]
+
+Entidade: Daisy
+Relacionadas [('Daario Naharis', 67), ('Illyrio Mopatis', 67), ('Alliser Thorne', 60), ('Dothraki Sea', 60)]
+
+Entidade: Dany
+Relacionadas [('Anya Waynwood', 75), ('Belicho Paenymion', 75), ('Kraznys The Unsullied', 75), ('Many-Faced God', 75)]
+
+Entidade: Davos
+Relacionadas [('Braavosi Water Dancer', 80), ('Davos An History of Aegon the Conqueror', 80), ('Davos Seaworth', 80), ('First Sword of Braavos', 80)]
+
+Entidade: Dayne
+Relacionadas [('Arthur Dayne', 80), ('Ilyn Payne', 80), ('Podrick Payne', 80), ('Podrick Payne of Stannis', 80)]
+
+Entidade: Dondarrion
+Relacionadas [('Beric Dondarrion', 90), ('Jon Arryn', 67), ('Daario Naharis', 60), ('Robin Arryn', 60)]
+
+Entidade: Dontos
+Relacionadas [('Dontos Hollard', 83), ('Boros Blount of the Kingsguard', 67), ("Commander Jeor Mormont of the Night 's Watch", 67), ('Common Tongue', 67)]
+
+Entidade: Doran
+Relacionadas [('Doran Martell', 80), ('Doran Martell of Dorne', 80), ('Septa Mordane', 80), ('Alliser Thorne', 60)]
+
+Entidade: Doreah
+Relacionadas [('Great Hall', 67), ('Great Houses', 67), ('House Tyrell of the Reach', 67), ('Jorah Mormont', 67)]
+
+Entidade: Dorne
+Relacionadas [('Alliser Thorne', 80), ('Commander Alliser Thorne', 80), ('Doran Martell of Dorne', 80), ('House Martell of Dorne', 80)]
+
+Entidade: Dornish
+Relacionadas [("Jaime 's Dornish", 86), ("The Dornishman 's Wife", 86), ('Tycho Nestoris', 67), ('Balon King of the Iron Islands', 57)]
+
+Entidade: Dosh
+Relacionadas [('Dontos Hollard', 75), ('High Priestess of the Dosh Khaleen', 75), ('Temple of the Dosh Khaleen', 75), ('Common Tongue of Westeros', 57)]
+
+Entidade: Dothraki
+Relacionadas [('Dothraki Sea', 88), ('Vaes Dothrak', 80), ('Brother Lancel', 62), ('Great Other', 62)]
+
+Entidade: Dracarys
+Relacionadas [('Ramsay Snow', 62), ('Temple of the Graces', 57), ('First Sword of Braavos', 53), ('Free City of Braavos', 53)]
+
+Entidade: Dragon
+Relacionadas [('Dance of the Dragons', 83), ('Dragon Queen', 83), ('Dragonstone Isle', 83), ('Gilly the Dragonglass', 83)]
+
+Entidade: Dragonglass
+Relacionadas [('Gilly the Dragonglass', 91), ('Dance of the Dragons', 67), ('Gold Dragons', 67), ('Mother of Dragons', 67)]
+
+Entidade: Dragons
+Relacionadas [('Dance of the Dragons', 86), ('Dragonstone Isle', 86), ('Gold Dragons', 86), ('House Baratheon of Dragonstone', 86)]
+
+Entidade: Dragonstone
+Relacionadas [('Dragonstone Isle', 91), ('House Baratheon of Dragonstone', 91), ('Stone Men', 71), ('Dance of the Dragons', 67)]
+
+Entidade: Dreadfort
+Relacionadas [('Roose Bolton of the Dreadfort', 89), ('Haunted Forest', 67), ('Red Fork of the Trident', 67), ('Red Fork of the Trident River', 67)]
+
+Entidade: Drogo
+Relacionadas [('Khal Drogo', 80), ('Dance of the Dragons', 60), ('Dragon Queen', 60), ('Dragonstone Isle', 60)]
+
+Entidade: Drogon
+Relacionadas [('Khal Drogo', 73), ('Dance of the Dragons', 67), ('Dragon Queen', 67), ('Dragonstone Isle', 67)]
+
+Entidade: East
+Relacionadas [('Arya Stark', 75), ("Bastard 's Girls", 75), ('Battle of Castle Black', 75), ('Casterly Rock', 75)]
+
+Entidade: Eastwatch-by-the-Sea
+Relacionadas [('The Bear', 67), ('City Watch', 60), ('The Vale', 53), ('The Waif', 53)]
+
+Entidade: Edd
+Relacionadas [('Dolorous Edd', 67), ('Eddard Stark', 67), ('Eddison Tollett', 67), ('Gold Dragons', 67)]
+
+Entidade: Eddard
+Relacionadas [('Eddard Stark', 83), ("Bastard 's Girls", 50), ('Beric Dondarrion', 50), ('Boros Blount of the Kingsguard', 50)]
+
+Entidade: Edmure
+Relacionadas [('Edmure Tully', 83), ('Drowned Men', 55), ('Maz Duur', 55), ('Mirri Maz Duur', 55)]
+
+Entidade: Egg
+Relacionadas [('Boros Blount of the Kingsguard', 67), ("Commander of Robert Baratheon 's Kingsguard", 67), ('Commander of the Kingsguard', 67), ('Jaime Lannister of the Kingsguard', 67)]
+
+Entidade: Elia
+Relacionadas [('Elia Martell', 75), ('Faith Militant', 75), ("Melisandre 's God", 75), ('Queen Talisa', 75)]
+
+Entidade: Ellaria
+Relacionadas [('Ellaria Sand', 86), ('Dontos Hollard', 62), ('Doom of Valyria', 62), ('Barristan Selmy', 57)]
+
+Entidade: Elliaria
+Relacionadas [('Ellaria Sand', 75), ('Myrcella Baratheon', 62), ('Princess Myrcella Baratheon', 62), ('Willas Bracken', 62)]
+
+Entidade: Eraz
+Relacionadas [('Kraznys The Unsullied', 75), ("Yunkai'i Wise Master Razdal", 75), ('Doom of Valyria', 57), ('Old Valyria', 57)]
+
+Entidade: Essos
+Relacionadas [('Crossroads Inn', 60), ('Daenerys Stormborn', 60), ('Daenerys Stormborn of House Targaryen', 60), ("Harpy 's Son", 60)]
+
+Entidade: Estermont
+Relacionadas [('Lannister Monster', 78), ('Daenerys Stormborn', 67), ('Daenerys Stormborn of House Targaryen', 67), ('Grand Maester Munkun', 67)]
+
+Entidade: Euron
+Relacionadas [('Euron Greyjoy', 80), ('Aegon the Conqueror', 60), ('Aeron Greyjoy', 60), ('Balon King of the Iron Islands', 60)]
+
+Entidade: Eyrie
+Relacionadas [('Bloody Gate of the Eyrie', 80), ("Eyrie 's High Hall", 80), ('High Hall of the Eyrie', 80), ('The Eyrie', 80)]
+
+Entidade: Faith
+Relacionadas [('Faith Militant', 80), ('Faith of the Seven', 80), ('High Septon of the Faith of the Seven', 80), ('Quaithe of Asshai', 80)]
+
+Entidade: Father
+Relacionadas [('The Father', 83), ('After Tommen', 67), ('Arthur Dayne', 67), ('Balon King of the Iron Islands', 67)]
+
+Entidade: Fennesz
+Relacionadas [('Brotherhood Without Banners', 62), ('Queen Daenerys', 62), ('Brienne of Tarth', 57), ('Daenerys Stormborn', 57)]
+
+Entidade: Fine
+Relacionadas [('Baelish At Winterfell', 75), ('Chamber of the Painted Table', 75), ('Crown Prince Rhaegar Targaryen', 75), ('Lands of Always Winter', 75)]
+
+Entidade: Fist
+Relacionadas [('Aerys the Lannisters', 75), ('Alton Lannister', 75), ('As Cersei Lannister', 75), ('Barristan Selmy', 75)]
+
+Entidade: Flowers
+Relacionadas [('Jafer Flowers', 86), ('Broken Tower', 62), ('Commander Gerold Hightower', 62), ('Commander of the Shadow Tower', 62)]
+
+Entidade: Forel
+Relacionadas [('Syrio Forel', 80), ('Alliser Thorne', 67), ('Commander Alliser Thorne', 67), ('House Martell of Dorne', 67)]
+
+Entidade: Frey
+Relacionadas [('Aeron Greyjoy', 75), ('Balon Greyjoy', 75), ('Euron Greyjoy', 75), ('Grey Wind', 75)]
+
+Entidade: Freys
+Relacionadas [("Shireen 's Greyscale", 80), ('House Frey', 67), ('King Aerys', 67), ('King Joffrey', 67)]
+
+Entidade: Frostfangs
+Relacionadas [('Barristan Selmy', 60), ('Commander Barristan Selmy', 60), ('First Ranger', 60), ("First Ranger of the Night 's Watch", 60)]
+
+Entidade: Gardens
+Relacionadas [('Water Gardens', 86), ('Water Gardens of Dorne', 86), ('Garden of Bones', 71), ('Warden of the North', 71)]
+
+Entidade: Gared
+Relacionadas [('Boros Blount of the Kingsguard', 67), ('Commander of the Kingsguard', 67), ('Dontos Hollard', 67), ('Jaime Lannister of the Kingsguard', 67)]
+
+Entidade: Gendry
+Relacionadas [('Daenerys Stormborn', 67), ('Daenerys Stormborn of House Targaryen', 67), ('Daenerys Targaryen', 67), ('Daenerys the Unburnt', 67)]
+
+Entidade: Genna
+Relacionadas [('Olenna Tyrell', 80), ('Aunt Lyanna', 60), ('Bowen Marsh', 60), ('Brienne of Tarth', 60)]
+
+Entidade: Gerold
+Relacionadas [('Commander Gerold Hightower', 83), ('Gerold Hightower', 83), ('Brotherhood Without Banners', 67), ('The Brotherhood', 67)]
+
+Entidade: Ghezn
+Relacionadas [("Commander Jeor Mormont of the Night 's Watch", 60), ("Commander of Robert Baratheon 's Kingsguard", 60), ("Commander of the Night 's Watch", 60), ('Daenerys the Unburnt', 60)]
+
+Entidade: Ghis
+Relacionadas [('Battle of the Whispering Wood', 75), ('Davos An History of Aegon the Conqueror', 75), ('First of His Name', 75), ('His Conquest of Westeros', 75)]
+
+Entidade: Ghiscari
+Relacionadas [('Old Ghiscari', 88), ('Battle of the Whispering Wood', 62), ('Whispering Wood', 62), ('Boros Blount of the Kingsguard', 50)]
+
+Entidade: Ghost
+Relacionadas [('Hoster Tully', 80), ('Areo Hotah', 60), ('Battle of Stone Mill', 60), ('Children of the Forest', 60)]
+
+Entidade: Gift
+Relacionadas [("Daznak 's Pit", 57), ('Great Pit', 57), ('The Waif', 57), ('Acting Hand of the King', 50)]
+
+Entidade: Gilly
+Relacionadas [('Gilly the Dragonglass', 80), ('Illyrio Mopatis', 80), ('Magister Illyrio Mopatis', 80), ('Magister Illyrio Mopatis of Pentos', 80)]
+
+Entidade: Glover
+Relacionadas [('Jafer Flowers', 67), ("Liberation of Slaver 's Bay", 67), ("Slaver 's Bay", 67), ('Slavers Bay', 67)]
+
+Entidade: Glovers
+Relacionadas [('Jafer Flowers', 71), ('Slavers Bay', 71), ('Northern Lords', 62), ('White Walkers', 62)]
+
+Entidade: Gods
+Relacionadas [('Crossroads Inn', 75), ('Gods Eye', 75), ('Northern Lords', 75), ('Old Gods', 75)]
+
+Entidade: Godswood
+Relacionadas [('Deepwood Motte', 62), ('Anya Waynwood', 50), ('Battle of the Whispering Wood', 50), ('Donnel Waynwood', 50)]
+
+Entidade: Great
+Relacionadas [('Great Hall', 80), ('Great Houses', 80), ('Great Khal', 80), ('Great Masters', 80)]
+
+Entidade: Greatjon
+Relacionadas [('Greatjon Umber', 88), ('Jon Sn', 67), ("Commander of Robert Baratheon 's Kingsguard", 62), ('Great Houses', 62)]
+
+Entidade: Greensight
+Relacionadas [('The Sight', 67), ("Commander Jeor Mormont of the Night 's Watch", 60), ("Commander of the Night 's Watch", 60), ('Essence of Nightshade', 60)]
+
+Entidade: Gregor
+Relacionadas [('Gregor Clegane', 83), ('Commander Jeor Mormont', 67), ("Commander Jeor Mormont of the Night 's Watch", 67), ("Maegor 's Holdfast", 67)]
+
+Entidade: Grenn
+Relacionadas [('Brienne of Tarth', 80), ('Aegon I Targaryen', 67), ('Aegon Targaryen', 67), ('Aemon Targaryen', 67)]
+
+Entidade: Greyguard
+Relacionadas [('Boros Blount of the Kingsguard', 56), ("Commander of Robert Baratheon 's Kingsguard", 56), ('Commander of the Kingsguard', 56), ('Crown Prince Rhaegar Targaryen', 56)]
+
+Entidade: Greyjoy
+Relacionadas [('Aeron Greyjoy', 86), ('Balon Greyjoy', 86), ('Euron Greyjoy', 86), ('Greyjoy Rebellion', 86)]
+
+Entidade: Greyjoys
+Relacionadas [('Aeron Greyjoy', 80), ('Balon Greyjoy', 80), ('Euron Greyjoy', 80), ('House Greyjoy', 80)]
+
+Entidade: Greyscale
+Relacionadas [("Shireen 's Greyscale", 89), ('Sapphire Isle', 62), ('Denys Mallister', 56), ('Gregor Clegane', 56)]
+
+Entidade: Guild
+Relacionadas [('Brandon the Builder', 80), ('First Builder', 80), ('First Builder Othell Yarwyck', 80), ('Children of the Forest', 60)]
+
+Entidade: H'ghar
+Relacionadas [("Jaqen H'ghar", 67), ('Acting Hand of the King', 50), ('Aegon I Targaryen', 50), ('Aegon Targaryen', 50)]
+
+Entidade: Half-brother
+Relacionadas [('Book of Brothers', 67), ('Great Other', 67), ('The Bear', 67), ('The Eyrie', 62)]
+
+Entidade: Halfhand
+Relacionadas [('Qhorin Halfhand', 88), ('Bear Island', 57), ('Lady of Bear Island', 57), ('High Valyrian', 53)]
+
+Entidade: Hallyne
+Relacionadas [('Wisdom Hallyne', 86), ('Podrick Payne', 67), ('Alliser Thorne', 57), ('Arthur Dayne', 57)]
+
+Entidade: Hand
+Relacionadas [('AND Wylis', 75), ('Acting Hand of the King', 75), ('Balon King of the Iron Islands', 75), ('Bear Island', 75)]
+
+Entidade: Hardhome
+Relacionadas [('Red Comet', 62), ('Hot Pie', 55), ('Water Gardens', 53), ('After Tommen', 50)]
+
+Entidade: Harpy
+Relacionadas [("Harpy 's Son", 80), ('Son of the Harpy', 80), ('Sons of the Harpy', 80), ('Aegon I Targaryen', 60)]
+
+Entidade: Harrenhal
+Relacionadas [('Lord of Harrenhal', 89), ('Whent of Harrenhal', 89), ('Aegon I Targaryen', 56), ('Aegon Targaryen', 56)]
+
+Entidade: Heart
+Relacionadas [('Last Hearth', 80), ('King Robert', 67), ('Old Bear', 67), ('The Bear', 67)]
+
+Entidade: Heward
+Relacionadas [('Eddard Stark', 67), ('Warden of the North', 67), ('Old Bear', 60), ('Battle of the Blackwater', 55)]
+
+Entidade: Highgarden
+Relacionadas [('Boros Blount of the Kingsguard', 63), ("Commander of Robert Baratheon 's Kingsguard", 63), ('Commander of the Kingsguard', 63), ('Essence of Nightshade', 63)]
+
+Entidade: Hill
+Relacionadas [('Battle of Stone Mill', 75), ('Gilly the Dragonglass', 75), ('Hollow Hill', 75), ('Horn Hill', 75)]
+
+Entidade: Hizdahr
+Relacionadas [('Brandon the Builder', 46), ('First Builder', 46), ('Master Mighdal', 46), ('Old Bear', 46)]
+
+Entidade: Hodor
+Relacionadas [('Beric Dondarrion', 60), ('Dolorous Edd', 60), ('Doran Martell', 60), ('Doran Martell of Dorne', 60)]
+
+Entidade: Hollard
+Relacionadas [('Dontos Hollard', 86), ('Ellaria Sand', 57), ('First Builder Othell Yarwyck', 57), ('Howland Reed', 57)]
+
+Entidade: Hoster
+Relacionadas [('Hoster Tully', 83), ('Lannister Monster', 83), ('Aerys the Lannisters', 67), ('Alton Lannister', 67)]
+
+Entidade: Hound
+Relacionadas [('The Hound', 80), ('Beric Dondarrion', 60), ('Beyond the Wall', 60), ('Boros Blount of the Kingsguard', 60)]
+
+Entidade: House
+Relacionadas [('Daenerys Stormborn of House Targaryen', 80), ('Dolorous Edd', 80), ('Great Houses', 80), ('House Arryn', 80)]
+
+Entidade: Houses
+Relacionadas [('Great Houses', 83), ('House Stark', 83), ('Houses Jon', 83), ('Houses Lannister', 83)]
+
+Entidade: Howland
+Relacionadas [('Howland Reed', 86), ('Shadow Lands', 86), ('Maester Wolkan', 62), ('Alton Lannister', 57)]
+
+Entidade: Hugh
+Relacionadas [('Hugh of the Vale', 75), ('Acting Hand of the King', 50), ('Commander Gerold Hightower', 50), ("Commander Jeor Mormont of the Night 's Watch", 50)]
+
+Entidade: Ice
+Relacionadas [('As Cersei Lannister', 67), ('Black Cells', 67), ('Braavosi Water Dancer', 67), ('Brother Lancel', 67)]
+
+Entidade: Iggo
+Relacionadas [('Aegon I Targaryen', 50), ('Aegon Targaryen', 50), ('Aegon the Conquer', 50), ('Aegon the Conqueror', 50)]
+
+Entidade: Illyrio
+Relacionadas [('Illyrio Mopatis', 86), ('Magister Illyrio Mopatis', 86), ('Magister Illyrio Mopatis of Pentos', 86), ('Greyjoy Rebellion', 62)]
+
+Entidade: Ilyn
+Relacionadas [('Aunt Lyanna', 75), ('Catelyn Stark', 75), ('Commander Janos Slynt', 75), ('Ilyn Payne', 75)]
+
+Entidade: Imp
+Relacionadas [('High Priestess of the Red Temple of Volantis', 67), ('Illyrio Mopatis', 67), ("King-Beyond-the-Wall 's Camp", 67), ('Lannister Camp', 67)]
+
+Entidade: Inn
+Relacionadas [('Aerys the Lannisters', 67), ('Alton Lannister', 67), ('As Cersei Lannister', 67), ('Aunt Lyanna', 67)]
+
+Entidade: Iron
+Relacionadas [('Aeron Greyjoy', 75), ('Balon King of the Iron Islands', 75), ('Beric Dondarrion', 75), ('Bronn of the Blackwater', 75)]
+
+Entidade: Ironborn
+Relacionadas [('Daenerys Stormborn', 62), ('Daenerys Stormborn of House Targaryen', 62), ('Iron Bank', 62), ('Iron Bank of Braavos', 62)]
+
+Entidade: Irri
+Relacionadas [('Barristan Selmy', 75), ('Beric Dondarrion', 75), ('Black Walder Rivers', 75), ('Commander Barristan Selmy', 75)]
+
+Entidade: Jaime
+Relacionadas [("Jaime 's Dornish", 80), ('Jaime Lannister', 80), ('Jaime Lannister of the Kingsguard', 80), ('Trystane Martell Jaime', 80)]
+
+Entidade: Jamie
+Relacionadas [('First of His Name', 67), ('Chamber of the Painted Table', 60), ('Dagmer Cleftjaw', 60), ('Great Pyramid', 60)]
+
+Entidade: Janos
+Relacionadas [('Commander Janos Slynt', 80), ('Janos Slynt', 80), ('Aerys the Lannisters', 60), ('Alton Lannister', 60)]
+
+Entidade: Jaqen
+Relacionadas [("Jaqen H'ghar", 80), ('Aegon I Targaryen', 60), ('Aegon Targaryen', 60), ('Aegon the Conquer', 60)]
+
+Entidade: Jeor
+Relacionadas [('Aegon the Conqueror', 75), ('Baelor the Blessed', 75), ('Castle Stokeworth', 75), ('Commander Jeor Mormont', 75)]
+
+Entidade: Jhiqui
+Relacionadas [('Brandon the Builder', 50), ('Faith Militant', 50), ('Quaithe of Asshai', 50), ('Sapphire Isle', 50)]
+
+Entidade: Joanna
+Relacionadas [('Aunt Lyanna', 67), ('Lyanna Mormont', 67), ('Lyanna Stark', 67), ('Olenna Tyrell', 67)]
+
+Entidade: Joffrey
+Relacionadas [('Joffrey Baratheon', 86), ('King Joffrey', 86), ('King Joffrey Baratheon', 86), ('Aeron Greyjoy', 57)]
+
+Entidade: Jojen
+Relacionadas [('Jojen Reed', 80), ('After Tommen', 60), ('Axell Florent', 60), ('Benjen Stark', 60)]
+
+Entidade: Jon
+Relacionadas [('Aegon I Targaryen', 67), ('Aegon Targaryen', 67), ('Aegon the Conquer', 67), ('Aegon the Conqueror', 67)]
+
+Entidade: Jorah
+Relacionadas [('Jorah Mormont', 80), ('Amory Lorch', 60), ('Areo Hotah', 60), ('Baelor the Blessed', 60)]
+
+Entidade: Jory
+Relacionadas [('Amory Lorch', 75), ('Davos An History of Aegon the Conqueror', 75), ('Jory Cassel', 75), ('Aegon the Conqueror', 57)]
+
+Entidade: Joyeuse
+Relacionadas [('Great Houses', 62), ('Daenerys Stormborn of House Targaryen', 57), ('Dolorous Edd', 57), ('Greyjoy Rebellion', 57)]
+
+Entidade: Karhold
+Relacionadas [('Areo Hotah', 57), ('Brotherhood Without Banners', 57), ('Commander Gerold Hightower', 57), ('Dontos Hollard', 57)]
+
+Entidade: Karl
+Relacionadas [('At Karl', 75), ('Harald Karstark', 75), ('Karl Tanner', 75), ('Karlon Stark', 75)]
+
+Entidade: Karsi
+Relacionadas [('Daario Naharis', 67), ('Old Ghiscari', 67), ('Aerys the Lannisters', 60), ('As Cersei Lannister', 60)]
+
+Entidade: Karstark
+Relacionadas [('Harald Karstark', 88), ('House Karstark', 88), ('Rickard Karstark', 88), ('Torrhen Karstark', 88)]
+
+Entidade: Karstarks
+Relacionadas [('Harald Karstark', 82), ('House Karstark', 82), ('Rickard Karstark', 82), ('Torrhen Karstark', 82)]
+
+Entidade: Kayla
+Relacionadas [('Arya Stark', 60), ('Kevan Lannister', 60), ('Martyn Lannister', 60), ('Qhorin Halfhand', 60)]
+
+Entidade: Keep
+Relacionadas [("Craster 's Keep", 75), ('Crasters Keep', 75), ('Deepwood Motte', 75), ('Red Keep', 75)]
+
+Entidade: Kevan
+Relacionadas [('Kevan Lannister', 80), ('Aerys the Lannisters', 60), ('Faith of the Seven', 60), ('Free City of Volantis', 60)]
+
+Entidade: Khal
+Relacionadas [("Eyrie 's High Hall", 75), ('Great Hall', 75), ('Great Khal', 75), ('Hall of Faces', 75)]
+
+Entidade: Khalar
+Relacionadas [('Crown Prince Rhaegar Targaryen', 67), ('Dontos Hollard', 67), ('Khal Drogo', 67), ('Rhaegar Targaryen', 67)]
+
+Entidade: Khalasar
+Relacionadas [('Dontos Hollard', 53), ('Queen Talisa', 53), ('Alliser Thorne', 50), ('Arya Stark', 50)]
+
+Entidade: Khaleesi
+Relacionadas [('High Priestess of the Dosh Khaleen', 67), ('Temple of the Dosh Khaleen', 67), ('Queen Daenerys', 53), ('White Walkers', 53)]
+
+Entidade: Khals
+Relacionadas [('Great Khal', 67), ('Lord of Harrenhal', 67), ('Master Mighdal', 67), ('Whent of Harrenhal', 67)]
+
+Entidade: King
+Relacionadas [('Acting Hand of the King', 75), ('Balon King of the Iron Islands', 75), ('Battle of the Whispering Wood', 75), ('Boros Blount of the Kingsguard', 75)]
+
+Entidade: King-Beyond-the-Wall
+Relacionadas [('The Wall', 75), ('Beyond the Wall', 73), ('King Beyond the Wall', 70), ("King-Beyond-the-Wall 's Camp", 70)]
+
+Entidade: Kingdom
+Relacionadas [('Lord of the Seven Kingdoms', 86), ('Seven Kingdoms', 86), ('King Tommen', 71), ('King Tommen Baratheon', 71)]
+
+Entidade: Kingdoms
+Relacionadas [('Lord of the Seven Kingdoms', 88), ('Seven Kingdoms', 88), ('King Tommen', 62), ('King Tommen Baratheon', 62)]
+
+Entidade: Kingsguard
+Relacionadas [('Boros Blount of the Kingsguard', 90), ("Commander of Robert Baratheon 's Kingsguard", 90), ('Commander of the Kingsguard', 90), ('Jaime Lannister of the Kingsguard', 90)]
+
+Entidade: Kingslayer
+Relacionadas [('Boros Blount of the Kingsguard', 63), ("Commander of Robert Baratheon 's Kingsguard", 63), ('Commander of the Kingsguard', 63), ('Jaime Lannister of the Kingsguard', 63)]
+
+Entidade: Kingsmoot
+Relacionadas [('Lives of Four Kings', 57), ('War of the Five Kings', 57), ('Balon King of the Iron Islands', 56), ('Battle of the Whispering Wood', 56)]
+
+Entidade: Kingsroad
+Relacionadas [('Boros Blount of the Kingsguard', 67), ("Commander of Robert Baratheon 's Kingsguard", 67), ('Commander of the Kingsguard', 67), ('Growing Strong', 67)]
+
+Entidade: Kingswood
+Relacionadas [('Battle of the Whispering Wood', 78), ('Whispering Wood', 78), ('Lives of Four Kings', 57), ('War of the Five Kings', 57)]
+
+Entidade: Kinslaying
+Relacionadas [('Iron Islands', 60), ("King 's Landing", 60), ("King's Landing", 60), ("Sack of King 's Landing", 60)]
+
+Entidade: Kinvara
+Relacionadas [('Aegon I Targaryen', 57), ('Aegon Targaryen', 57), ('Aemon Targaryen', 57), ('Doom of Valyria', 57)]
+
+Entidade: Kovarro
+Relacionadas [('Beric Dondarrion', 57), ('High Sparrow', 57), ('Jon Arryn', 57), ('Narrow Sea', 57)]
+
+Entidade: Kraznys
+Relacionadas [('Kraznys The Unsullied', 86), ('Dance of the Dragons', 62), ('Gold Dragons', 62), ('Mother of Dragons', 62)]
+
+Entidade: Lancel
+Relacionadas [('Brother Lancel', 83), ('Lancel Lannister', 83), ('Barristan Selmy', 67), ('Braavosi Water Dancer', 67)]
+
+Entidade: Lanna
+Relacionadas [('Aunt Lyanna', 80), ('Lyanna Mormont', 80), ('Lyanna Stark', 80), ('Aerys the Lannisters', 60)]
+
+Entidade: Lannister
+Relacionadas [('Aerys the Lannisters', 89), ('Alton Lannister', 89), ('As Cersei Lannister', 89), ('Cersei Lannister', 89)]
+
+Entidade: Lannister-Tyrell
+Relacionadas [('As Cersei Lannister', 64), ('Cersei Lannister', 64), ('Houses Lannister', 64), ('King Tyrion Lannister', 64)]
+
+Entidade: Lannister/Tyrell
+Relacionadas [('As Cersei Lannister', 64), ('Cersei Lannister', 64), ('Houses Lannister', 64), ('King Tyrion Lannister', 64)]
+
+Entidade: Lannisters
+Relacionadas [('Aerys the Lannisters', 90), ('The Lannisters', 90), ('Alton Lannister', 84), ('As Cersei Lannister', 84)]
+
+Entidade: Laws
+Relacionadas [('Master of Laws', 75), ('Dagmer Cleftjaw', 57), ('Anya Waynwood', 50), ('Arya Stark', 50)]
+
+Entidade: Leaf
+Relacionadas [('Roose Bolton of the Dreadfort', 75), ('Dothraki Sea', 57), ('Narrow Sea', 57), ('Red Flea', 57)]
+
+Entidade: Lhara
+Relacionadas [('Harald Karstark', 80), ("Jaqen H'ghar", 67), ('Lame Lothar', 67), ('Aegon I Targaryen', 60)]
+
+Entidade: Lhazar
+Relacionadas [('Crown Prince Rhaegar Targaryen', 67), ('Rhaegar Targaryen', 67), ("Jaqen H'ghar", 60), ('Lame Lothar', 60)]
+
+Entidade: Lhazareen
+Relacionadas [('High Priestess of the Dosh Khaleen', 62), ('Princess Shireen', 62), ('Temple of the Dosh Khaleen', 62), ('Lord of Harrenhal', 56)]
+
+Entidade: Littefinger
+Relacionadas [('The Fingers', 73), ('King Aerys', 62), ('The King', 62), ('Little Bird', 57)]
+
+Entidade: Littlefinger
+Relacionadas [('The Fingers', 80), ('Little Bird', 64), ('King Aerys', 62), ('The King', 62)]
+
+Entidade: Loboda
+Relacionadas [('Good Masters', 67), ('Good Masters of Astapor', 67), ('Anya Waynwood', 60), ('Whispering Wood', 60)]
+
+Entidade: Locke
+Relacionadas [('Casterly Rock', 67), ('Waymar Royce', 67), ('Yohn Royce', 67), ('Black Cells', 60)]
+
+Entidade: Lollys
+Relacionadas [('Lollys Stokeworth', 83), ('Tears of Lys', 67), ('Black Cells', 55), ('Brynden Tully', 55)]
+
+Entidade: Lommy
+Relacionadas [('Lommy Greenhands', 80), ('After Tommen', 60), ('Commander Alliser Thorne', 60), ('Commander Barristan Selmy', 60)]
+
+Entidade: Longclaw
+Relacionadas [('Gilly the Dragonglass', 62), ('Small Council', 57), ('Alton Lannister', 50), ('Balon King of the Iron Islands', 50)]
+
+Entidade: Loraq
+Relacionadas [('Doran Martell', 60), ('Doran Martell of Dorne', 60), ('Jorah Mormont', 60), ('Loras Tyrell', 60)]
+
+Entidade: Loras
+Relacionadas [('Loras Tyrell', 80), ('Arya Stark', 60), ('Boros Blount of the Kingsguard', 60), ('Bran Stark', 60)]
+
+Entidade: Lorch
+Relacionadas [('Amory Lorch', 80), ('Baelor the Blessed', 60), ('Castle Stokeworth', 60), ('Davos Seaworth', 60)]
+
+Entidade: Lordsport
+Relacionadas [('Roose Bolton of the Dreadfort', 59), ('Northern Lords', 57), ('Lord of Riverrun', 56), ('Lord of the Seven Kingdoms', 56)]
+
+Entidade: Lorren
+Relacionadas [("Torrhen 's Square", 83), ('Torrhen Karstark', 83), ('Axell Florent', 67), ('House Florent', 67)]
+
+Entidade: Lothar
+Relacionadas [('Lame Lothar', 83), ('Lothar Frey', 83), ('Aegon Targaryen', 67), ('Aemon Targaryen', 67)]
+
+Entidade: Luwin
+Relacionadas [('Maester Luwin', 80), ('Baelish At Winterfell', 60), ('Grey Wind', 60), ('Growing Strong', 60)]
+
+Entidade: Lyanna
+Relacionadas [('Aunt Lyanna', 83), ('Lyanna Mormont', 83), ('Lyanna Stark', 83), ('Aerys the Lannisters', 50)]
+
+Entidade: Lys
+Relacionadas [('Aerys Targaryen', 67), ('Aerys the Lannisters', 67), ('Daenerys Stormborn', 67), ('Daenerys Stormborn of House Targaryen', 67)]
+
+Entidade: Lysa
+Relacionadas [('Lysa Arryn', 75), ('Lysa Tully', 75), ("Shireen 's Greyscale", 75), ('Trystane Martell', 75)]
+
+Entidade: Lysene
+Relacionadas [('Essence of Nightshade', 67), ('Trystane Martell', 67), ('Trystane Martell Jaime', 67), ('Tyene Sand', 67)]
+
+Entidade: M'Lord
+Relacionadas [('Battle of Ashford', 50), ('Dontos Hollard', 50), ('First Sword of Braavos', 50), ("Lord 's Chosen", 50)]
+
+Entidade: Mace
+Relacionadas [('Braavosi Water Dancer', 75), ('Brother Lancel', 75), ('Dance of the Dragons', 75), ('Faceless Man', 75)]
+
+Entidade: Maester
+Relacionadas [('Grand Maester Kaeth', 86), ('Grand Maester Munkun', 86), ('Grand Maester Pycelle', 86), ('Maester Aemon', 86)]
+
+Entidade: Mag
+Relacionadas [('Aegon I Targaryen', 67), ('Aegon Targaryen', 67), ('Aegon the Conquer', 67), ('Aegon the Conqueror', 67)]
+
+Entidade: Maggy
+Relacionadas [('Talisa Maegyr', 60), ('Great Ranging', 44), ('Aegon I Targaryen', 40), ('Aegon Targaryen', 40)]
+
+Entidade: Mago
+Relacionadas [('Aegon I Targaryen', 75), ('Aegon Targaryen', 75), ('Aegon the Conquer', 75), ('Aegon the Conqueror', 75)]
+
+Entidade: Malko
+Relacionadas [('Walk of Punishment', 80), ('Alton Lannister', 60), ('Baelor the Blessed', 60), ('Balon Greyjoy', 60)]
+
+Entidade: Mance
+Relacionadas [('Braavosi Water Dancer', 80), ('Brother Lancel', 80), ('Dance of the Dragons', 80), ('King-Beyond-the-Wall Mance Rayder', 80)]
+
+Entidade: Mandon
+Relacionadas [('Brandon the Builder', 83), ('Mandon Moore', 83), ('Mandon Moore of the Kingsguard', 83), ('Acting Hand of the King', 67)]
+
+Entidade: Marei
+Relacionadas [('Old Ghiscari', 67), ("Torrhen 's Square", 67), ('Aegon I Targaryen', 60), ('Aegon Targaryen', 60)]
+
+Entidade: Margaery
+Relacionadas [('Margaery Tyrell', 88), ('Queen Margaery', 88), ('Queen Margaery Tyrell', 88), ('Aegon I Targaryen', 75)]
+
+Entidade: Marillion
+Relacionadas [('Greyjoy Rebellion', 67), ("Robert 's Rebellion", 67), ('Stallion Who Mounts the World', 67), ('The Stallion That Mounts The World', 67)]
+
+Entidade: Martell
+Relacionadas [('Doran Martell', 86), ('Doran Martell of Dorne', 86), ('Elia Martell', 86), ('House Martell', 86)]
+
+Entidade: Martells
+Relacionadas [('Doran Martell', 80), ('Elia Martell', 80), ('House Martell', 80), ('Oberyn Martell', 80)]
+
+Entidade: Martyn
+Relacionadas [('Martyn Lannister', 83), ('Aegon I Targaryen', 67), ('Aegon Targaryen', 67), ('Aemon Targaryen', 67)]
+
+Entidade: Masters
+Relacionadas [('Crasters Keep', 86), ('Good Masters', 86), ('Good Masters of Astapor', 86), ('Great Masters', 86)]
+
+Entidade: Matthos
+Relacionadas [('Matthos Seaworth', 86), ('Great Houses', 71), ("Commander of Robert Baratheon 's Kingsguard", 57), ('Faith of the Seven', 57)]
+
+Entidade: Mazins
+Relacionadas [('Kraznys The Unsullied', 67), ('Rains of Castamere', 67), ('The Rains of Castamere', 67), ('The Mountain', 60)]
+
+Entidade: Meera
+Relacionadas [('Meera Reed', 80), ('Army of the Dead', 60), ('Blackwater Bay', 60), ('Braavosi Water Dancer', 60)]
+
+Entidade: Meereen
+Relacionadas [('Meereenese Great Masters', 86), ('Meereenese Knot', 86), ('Queen of Meereen', 86), ('Meerenese Pit Fighter', 71)]
+
+Entidade: Meereenese
+Relacionadas [('Meereenese Great Masters', 90), ('Meereenese Knot', 90), ('Meerenese Pit Fighter', 80), ('Queen of Meereen', 71)]
+
+Entidade: Melara
+Relacionadas [('Melara Hetherspoon', 83), ('Ellaria Sand', 67), ('Great Ranging', 67), ('House Baratheon', 67)]
+
+Entidade: Melisandre
+Relacionadas [("Melisandre 's God", 90), ('Red Priestess Melisandre', 90), ('Bear Island', 60), ('Elia Martell', 60)]
+
+Entidade: Mero
+Relacionadas [('Aegon the Conqueror', 75), ('Aeron Greyjoy', 75), ('Brotherhood Without Banners', 75), ('Chamber of the Painted Table', 75)]
+
+Entidade: Meryn
+Relacionadas [('Meryn Trant', 80), ('Meryn Trant Ser Meryn Trant', 80), ('Meryn Trant of the Kingsguard', 80), ('Oberyn Martell', 80)]
+
+Entidade: Mhaegen
+Relacionadas [('High Priestess of the Dosh Khaleen', 77), ('Temple of the Dosh Khaleen', 77), ('Princess Shireen', 62), ('Aegon I Targaryen', 57)]
+
+Entidade: Mighdal
+Relacionadas [('Master Mighdal', 86), ("Eyrie 's High Hall", 71), ('High Hall of the Eyrie', 71), ('High Valyrian', 71)]
+
+Entidade: Mikken
+Relacionadas [('Battle of the Trident', 50), ('Brienne of Tarth', 50), ('Broken Tower', 50), ('Children of the Forest', 50)]
+
+Entidade: Missandei
+Relacionadas [('Missandei of Naath', 89), ('Red Priestess Melisandre', 71), ("Melisandre 's God", 67), ('Bear Island', 62)]
+
+Entidade: Mord
+Relacionadas [('Battle of Ashford', 75), ('First Sword of Braavos', 75), ("Lord 's Chosen", 75), ('Lord of Bones', 75)]
+
+Entidade: Mormont
+Relacionadas [('Commander Jeor Mormont', 86), ("Commander Jeor Mormont of the Night 's Watch", 86), ('Commander Mormont', 86), ('House Mormont', 86)]
+
+Entidade: Mormonts
+Relacionadas [('Commander Jeor Mormont', 80), ('Commander Mormont', 80), ('House Mormont', 80), ('Jeor Mormont', 80)]
+
+Entidade: Moro
+Relacionadas [('Boros Blount of the Kingsguard', 75), ('Commander Mormont', 75), ('Dolorous Edd', 75), ('House Mormont', 75)]
+
+Entidade: Mossador
+Relacionadas [('Crossroads Inn', 62), ('Davos Seaworth', 62), ('Matthos Seaworth', 62), ('Sandor Clegane', 62)]
+
+Entidade: Mother
+Relacionadas [('Book of Brothers', 83), ('Brother Lancel', 83), ('Brotherhood Without Banners', 83), ('Great Other', 83)]
+
+Entidade: Mott
+Relacionadas [('Deepwood Motte', 75), ('Flea Bottom', 75), ('Maester Caleotte', 75), ('Not Theon', 75)]
+
+Entidade: Mountain
+Relacionadas [('Mountain That Rides', 88), ('The Mountain', 88), ('Aunt Lyanna', 62), ('Old Nan', 57)]
+
+Entidade: Mutiny
+Relacionadas [('Mountain That Rides', 67), ('The Mountain', 67), ('Maester Luwin', 55), ('Acting Hand of the King', 50)]
+
+Entidade: Mycah
+Relacionadas [('Jory Cassel', 60), ("Shireen 's Greyscale", 60), ('Tycho Nestoris', 60), ('Amory Lorch', 44)]
+
+Entidade: Myr
+Relacionadas [('Bloody Gate of the Eyrie', 67), ('Casterly Rock', 67), ('Doom of Valyria', 67), ("Eyrie 's High Hall", 67)]
+
+Entidade: Myranda
+Relacionadas [('Grand Maester Kaeth', 71), ('Grand Maester Munkun', 71), ('Grand Maester Pycelle', 71), ('Qyburn Grand Maester', 71)]
+
+Entidade: Myrcella
+Relacionadas [("Myrcella 's Lannister", 88), ('Myrcella Baratheon', 88), ('Princess Myrcella', 88), ('Princess Myrcella Baratheon', 88)]
+
+Entidade: Myrnada
+Relacionadas [('Great Pyramid', 62), ('Eastern Road', 57), ('Harald Karstark', 57), ('Rhaenyra Targaryen', 57)]
+
+Entidade: Naath
+Relacionadas [("Commander of Robert Baratheon 's Kingsguard", 80), ('House Baratheon', 80), ('House Baratheon of Dragonstone', 80), ('Joffrey Baratheon', 80)]
+
+Entidade: Naharis
+Relacionadas [('Daario Naharis', 86), ('Quaithe of Asshai', 62), ('Barristan Selmy', 57), ('Bear Island', 57)]
+
+Entidade: Nakloz
+Relacionadas [('Alton Lannister', 50), ('Baelor the Blessed', 50), ('Balon Greyjoy', 50), ('Balon King of the Iron Islands', 50)]
+
+Entidade: Nan
+Relacionadas [('AND Wylis', 67), ('Acting Hand of the King', 67), ('Aerys the Lannisters', 67), ('Alton Lannister', 67)]
+
+Entidade: Neck
+Relacionadas [('Acting Hand of the King', 50), ('Aegon the Conquer', 50), ('Aegon the Conqueror', 50), ('Battle of Castle Black', 50)]
+
+Entidade: Ned
+Relacionadas [('Army of the Dead', 67), ('Baelor the Blessed', 67), ('Chamber of the Painted Table', 67), ('Dance of the Dragons', 67)]
+
+Entidade: Needle
+Relacionadas [('Red Flea', 67), ('Howland Reed', 60), ('Jojen Reed', 60), ('Meera Reed', 60)]
+
+Entidade: New
+Relacionadas [('Battle of the Whispering Wood', 67), ('Beyond the Wall', 67), ('Castle Black of the White Walker', 67), ('Castle Stokeworth', 67)]
+
+Entidade: Nightfort
+Relacionadas [('Commander Gerold Hightower', 71), ('Gerold Hightower', 71), ('Meerenese Pit Fighter', 62), ('Long Night', 57)]
+
+Entidade: North
+Relacionadas [('Baelor the Blessed', 80), ('Castle Stokeworth', 80), ('Davos Seaworth', 80), ('For the Watch', 80)]
+
+Entidade: Northeners
+Relacionadas [('Book of Brothers', 67), ('Sworn Brothers', 67), ('The Bear', 67), ('Great Other', 62)]
+
+Entidade: Northern
+Relacionadas [('Northern Lords', 88), ('Great Other', 71), ('Queen Mother', 71), ('Baelor the Blessed', 62)]
+
+Entidade: Northerners
+Relacionadas [('Baelor the Blessed', 64), ('Book of Brothers', 64), ('Northern Lords', 64), ('The Fingers', 64)]
+
+Entidade: Northmen
+Relacionadas [('Northern Lords', 75), ('Baelor the Blessed', 62), ('Battle of the Fist of the First Men', 62), ('Castle Stokeworth', 62)]
+
+Entidade: Norvosi
+Relacionadas [('Braavosi Water Dancer', 71), ('First Sword of Braavos', 62), ('Free City of Braavos', 62), ('Iron Bank of Braavos', 62)]
+
+Entidade: Nym
+Relacionadas [('Belicho Paenymion', 67), ('Nymeria Sand', 67), ('Waymar Royce', 67), ('Barristan Selmy', 40)]
+
+Entidade: Nymeria
+Relacionadas [('Nymeria Sand', 86), ('Doom of Valyria', 67), ('Old Valyria', 67), ('High Valyrian', 62)]
+
+Entidade: Oathkeeper
+Relacionadas [('The Bear', 62), ('The Father', 62), ('The Eyrie', 59), ('The Imp', 57)]
+
+Entidade: Obara
+Relacionadas [("Commander of Robert Baratheon 's Kingsguard", 80), ('House Baratheon', 80), ('House Baratheon of Dragonstone', 80), ('Joffrey Baratheon', 80)]
+
+Entidade: Oberyn
+Relacionadas [('Oberyn Martell', 83), ('Beyond the Wall', 67), ('Brynden Tully', 67), ('King Beyond the Wall', 67)]
+
+Entidade: Old
+Relacionadas [('Black Walder', 67), ('Black Walder Rivers', 67), ('Brandon the Builder', 67), ('Children of the Forest', 67)]
+
+Entidade: Oldtown
+Relacionadas [('Old Tongue', 71), ('House Bolton', 67), ('Ramsay Bolton', 67), ('Roose Bolton', 67)]
+
+Entidade: Olenna
+Relacionadas [('Olenna Tyrell', 83), ('Aunt Lyanna', 67), ('Lyanna Mormont', 67), ('Lyanna Stark', 67)]
+
+Entidade: Olly
+Relacionadas [('Brynden Tully', 75), ('Edmure Tully', 75), ('First Builder Othell Yarwyck', 75), ('Gilly the Dragonglass', 75)]
+
+Entidade: Olyvar
+Relacionadas [('Olyvar Frey', 83), ('First Builder Othell Yarwyck', 67), ('King Renly Baratheon', 67), ('Othell Yarwyck', 67)]
+
+Entidade: Orell
+Relacionadas [('Baelish At Winterfell', 80), ('Doran Martell', 80), ('Doran Martell of Dorne', 80), ('Elia Martell', 80)]
+
+Entidade: Ornela
+Relacionadas [('Donnel Waynwood', 67), ("Myrcella 's Lannister", 67), ('Myrcella Baratheon', 67), ('Princess Myrcella', 67)]
+
+Entidade: Orson
+Relacionadas [('Orson Lannister', 80), ('Aeron Greyjoy', 60), ('Battle of Stone Mill', 60), ('Beric Dondarrion', 60)]
+
+Entidade: Osha
+Relacionadas [('Baelish At Winterfell', 75), ('Commander of the Shadow Tower', 75), ('Essence of Nightshade', 75), ("King 's Hand", 75)]
+
+Entidade: Othor
+Relacionadas [('Alliser Thorne', 80), ('Commander Alliser Thorne', 80), ('Thoros of Myr', 80), ('Arthur Dayne', 60)]
+
+Entidade: Oxcross
+Relacionadas [('Battle of Oxcross', 86), ('Crossroads Inn', 71), ('Common Tongue of Westeros', 46), ('Dance of the Dragons', 46)]
+
+Entidade: Payne
+Relacionadas [('Arthur Dayne', 80), ('Ilyn Payne', 80), ('Podrick Payne', 80), ('Podrick Payne of Stannis', 80)]
+
+Entidade: Pentos
+Relacionadas [('Free City of Pentos', 83), ('Magister Illyrio Mopatis of Pentos', 83), ('Broken Tower', 67), ('Dontos Hollard', 67)]
+
+Entidade: Pentoshi
+Relacionadas [('Free City of Pentos', 71), ('Magister Illyrio Mopatis of Pentos', 71), ('Dontos Hollard', 62), ('Silent Sister', 62)]
+
+Entidade: Petyr
+Relacionadas [('House Tyrell', 80), ('House Tyrell of the Reach', 80), ('Mace Tyrell', 80), ('Master of Coin Mace Tyrell', 80)]
+
+Entidade: Pie
+Relacionadas [('Alliser Thorne', 67), ('Battle of the Trident', 67), ('Black Walder Rivers', 67), ('Bloody Gate of the Eyrie', 67)]
+
+Entidade: Piggy
+Relacionadas [('Boros Blount of the Kingsguard', 60), ("Commander of Robert Baratheon 's Kingsguard", 60), ('Commander of the Kingsguard', 60), ('Jaime Lannister of the Kingsguard', 60)]
+
+Entidade: Pit
+Relacionadas [('Aegon I Targaryen', 67), ('Aerys the Lannisters', 67), ('Alton Lannister', 67), ('As Cersei Lannister', 67)]
+
+Entidade: Pits
+Relacionadas [('AND Wylis', 57), ("Daznak 's Pit", 57), ('Great Pit', 57), ('Tycho Nestoris', 57)]
+
+Entidade: Pod
+Relacionadas [('Anya Waynwood', 67), ('Battle of Ashford', 67), ('Battle of the Whispering Wood', 67), ('Beric Dondarrion', 67)]
+
+Entidade: Podrick
+Relacionadas [('Podrick Payne', 86), ('Podrick Payne of Stannis', 86), ('Rodrik Cassel', 71), ('Rickard Karstark', 57)]
+
+Entidade: Polliver
+Relacionadas [('Alliser Thorne', 62), ('Commander Alliser Thorne', 62), ('Denys Mallister', 62), ('Lord of Riverrun', 62)]
+
+Entidade: Pree
+Relacionadas [('Free Cities', 75), ('Free City of Braavos', 75), ('Free City of Pentos', 75), ('Free City of Qohor', 75)]
+
+Entidade: Prendahl
+Relacionadas [('Lord of Harrenhal', 67), ('Whent of Harrenhal', 67), ('Great Hall', 62), ('Protector of the Realm', 57)]
+
+Entidade: Priestess
+Relacionadas [('High Priestess of the Dosh Khaleen', 89), ('High Priestess of the Red Temple of Volantis', 89), ('High Red Priestess', 89), ('Red Priestess', 89)]
+
+Entidade: Prologue
+Relacionadas [('Aeron Greyjoy', 50), ('Balon Greyjoy', 50), ('Boros Blount of the Kingsguard', 50), ('Common Tongue', 50)]
+
+Entidade: Pyat
+Relacionadas [('Pyat Pree', 75), ('Acting Hand of the King', 50), ('After Tommen', 50), ('Alton Lannister', 50)]
+
+Entidade: Pycelle
+Relacionadas [('Grand Maester Pycelle', 86), ('Maester Pycelle', 86), ("Myrcella 's Lannister", 71), ('Myrcella Baratheon', 71)]
+
+Entidade: Pyke
+Relacionadas [('Siege of Pyke', 75), ('First Builder Othell Yarwyck', 57), ('Gods Eye', 57), ('Othell Yarwyck', 57)]
+
+Entidade: Pyp
+Relacionadas [('Barristan Selmy', 40), ('Blackwater Bay', 40), ('Commander Barristan Selmy', 40), ('Edmure Tully', 40)]
+
+Entidade: Pypar
+Relacionadas [('First Builder Othell Yarwyck', 60), ('High Sparrow', 60), ('Joffrey Baratheon', 60), ('King Joffrey Baratheon', 60)]
+
+Entidade: Qaggaz
+Relacionadas [('Aegon I Targaryen', 50), ('Aegon Targaryen', 50), ('Aemon Targaryen', 50), ('Aerys Targaryen', 50)]
+
+Entidade: Qarth
+Relacionadas [('Arthur Dayne', 80), ('Brienne of Tarth', 80), ("Commander of Robert Baratheon 's Kingsguard", 80), ('House Baratheon', 80)]
+
+Entidade: Qartheen
+Relacionadas [("Commander of Robert Baratheon 's Kingsguard", 75), ('House Baratheon', 75), ('House Baratheon of Dragonstone', 75), ('Joffrey Baratheon', 75)]
+
+Entidade: Qhorin
+Relacionadas [('Qhorin Halfhand', 83), ('Alliser Thorne', 67), ('Commander Alliser Thorne', 67), ('Horn Hill', 67)]
+
+Entidade: Qotho
+Relacionadas [('Areo Hotah', 67), ('Castle Stokeworth', 67), ('Davos Seaworth', 67), ('Lollys Stokeworth', 67)]
+
+Entidade: Quaithe
+Relacionadas [('Quaithe of Asshai', 86), ('Alton Lannister', 57), ('As Cersei Lannister', 57), ('Cersei Lannister', 57)]
+
+Entidade: Queen
+Relacionadas [('Dragon Queen', 80), ('Queen Cersei', 80), ('Queen Cersei Lannister', 80), ('Queen Daenerys', 80)]
+
+Entidade: Queensgard
+Relacionadas [('Boros Blount of the Kingsguard', 60), ("Commander of Robert Baratheon 's Kingsguard", 60), ('Commander of the Kingsguard', 60), ('Jaime Lannister of the Kingsguard', 60)]
+
+Entidade: Queensguard
+Relacionadas [('Boros Blount of the Kingsguard', 64), ("Commander of Robert Baratheon 's Kingsguard", 64), ('Commander of the Kingsguard', 64), ('Jaime Lannister of the Kingsguard', 64)]
+
+Entidade: Qyburn
+Relacionadas [('Qyburn Grand Maester', 83), ('Daenerys the Unburnt', 67), ('Boros Blount of the Kingsguard', 50), ('Bran Stark', 50)]
+
+Entidade: R'hllor
+Relacionadas [('Axell Florent', 57), ('Dontos Hollard', 57), ('Hall of Faces', 57), ('High Hall of the Eyrie', 57)]
+
+Entidade: Rakharo
+Relacionadas [('At Karl', 57), ('Daario Naharis', 57), ('Great Khal', 57), ('Karlon Stark', 57)]
+
+Entidade: Ramsay
+Relacionadas [('Ramsay Bolton', 83), ('Ramsay Snow', 83), ('Queen Talisa', 55), ('Aegon I Targaryen', 50)]
+
+Entidade: Ran
+Relacionadas [('AND Wylis', 67), ('Acting Hand of the King', 67), ('Aerys the Lannisters', 67), ('Alton Lannister', 67)]
+
+Entidade: Randyll
+Relacionadas [('Randyll Tarly', 86), ('AND Wylis', 71), ('Lancel Lannister', 57), ('Septa Unella', 57)]
+
+Entidade: Rast
+Relacionadas [('Arya Stark', 75), ("Bastard 's Girls", 75), ('Battle of Castle Black', 75), ('Casterly Rock', 75)]
+
+Entidade: Raven
+Relacionadas [('Three-Eyed Raven', 80), ('Three-eyed Raven', 80), ('Aegon I Targaryen', 60), ('Aegon Targaryen', 60)]
+
+Entidade: Rayder
+Relacionadas [('King-Beyond-the-Wall Mance Rayder', 83), ('Mance Rayder', 83), ('Black Walder', 67), ('Black Walder Rivers', 67)]
+
+Entidade: Razdal
+Relacionadas [("Yunkai'i Wise Master Razdal", 83), ('The Citadel', 55), ('Commander Alliser Thorne', 50), ("Daznak 's Pit", 50)]
+
+Entidade: Reach
+Relacionadas [('House Tyrell of the Reach', 80), ('Belicho Paenymion', 60), ('City Watch', 60), ("Commander Jeor Mormont of the Night 's Watch", 60)]
+
+Entidade: Reed
+Relacionadas [('Howland Reed', 75), ('Jojen Reed', 75), ('Meera Reed', 75), ('Three-Eyed Raven', 75)]
+
+Entidade: Reeds
+Relacionadas [('Howland Reed', 67), ('Jojen Reed', 67), ('Meera Reed', 67), ('Baelor the Blessed', 60)]
+
+Entidade: Reek
+Relacionadas [('Gods Eye', 57), ('Pyat Pree', 57), ('Rains of Castamere', 57), ('Acting Hand of the King', 50)]
+
+Entidade: Regent
+Relacionadas [('Queen Regent', 83), ('Queen Regent Cersei', 83), ('Queen Regent Cersei Lannister', 83), ('Regent Cersei Lannister', 83)]
+
+Entidade: Renly
+Relacionadas [('King Renly Baratheon', 80), ('Renly Baratheon', 80), ('Aunt Lyanna', 60), ('Barristan Selmy', 60)]
+
+Entidade: Rennick
+Relacionadas [('Ralf Kenning', 57), ('The Tickler', 57), ('King Stannis', 46), ('Podrick Payne of Stannis', 46)]
+
+Entidade: Rhaegal
+Relacionadas [('Crown Prince Rhaegar Targaryen', 71), ('Rhaegar Targaryen', 71), ('Beyond the Wall', 57), ('Duncan the Tall', 57)]
+
+Entidade: Rhaegar
+Relacionadas [('Crown Prince Rhaegar Targaryen', 86), ('Rhaegar Targaryen', 86), ('Aemon Targaryen', 57), ('Aerys Targaryen', 57)]
+
+Entidade: Rhaego
+Relacionadas [('Aegon I Targaryen', 67), ('Aegon Targaryen', 67), ('Aegon the Conquer', 67), ('Aegon the Conqueror', 67)]
+
+Entidade: Rhaenyra
+Relacionadas [('Rhaenyra Targaryen', 88), ('Lord of Harrenhal', 62), ('Whent of Harrenhal', 62), ('High Priestess of the Dosh Khaleen', 53)]
+
+Entidade: Rhaenys
+Relacionadas [('Daenerys Stormborn', 71), ('Daenerys Stormborn of House Targaryen', 71), ('Daenerys Targaryen', 71), ('Daenerys the Unburnt', 71)]
+
+Entidade: Rickard
+Relacionadas [('Rickard Karstark', 86), ('Rickard Stark', 86), ('Old Ghiscari', 62), ('The Tickler', 62)]
+
+Entidade: Rickon
+Relacionadas [('Rickon Stark', 83), ('Beric Dondarrion', 67), ('His Conquest of Westeros', 67), ('Greyjoy Rebellion', 60)]
+
+Entidade: Riverlands
+Relacionadas [('AND Wylis', 62), ('Black Walder Rivers', 62), ('Balon King of the Iron Islands', 60), ('Iron Islands', 60)]
+
+Entidade: Rivermen
+Relacionadas [('Battle of the Fist of the First Men', 62), ('First Men', 62), ('Fist of the First Men', 62), ('Green Fork of Trident River', 62)]
+
+Entidade: Riverrun
+Relacionadas [('Lord of Riverrun', 88), ('Green Fork of Trident River', 62), ('Green Fork of the River Trident', 62), ('Red Fork of the Trident River', 62)]
+
+Entidade: Robb
+Relacionadas [('At Robb', 75), ('King Robb Stark', 75), ('North Robb Stark', 75), ('Robb Stark', 75)]
+
+Entidade: Robert
+Relacionadas [("Commander of Robert Baratheon 's Kingsguard", 83), ('King Robert', 83), ('King Robert Baratheon', 83), ("Robert 's Rebellion", 83)]
+
+Entidade: Robin
+Relacionadas [('Robin Arryn', 80), ('Sweetrobin Arryn', 80), ('Growing Strong', 60), ('Master of Coin', 60)]
+
+Entidade: Rodrik
+Relacionadas [('Podrick Payne', 83), ('Podrick Payne of Stannis', 83), ('Rodrik Cassel', 83), ('Brotherhood Without Banners', 50)]
+
+Entidade: Roose
+Relacionadas [('Roose Bolton', 80), ('Roose Bolton of the Dreadfort', 80), ('Boros Blount of the Kingsguard', 60), ('Daenerys Stormborn of House Targaryen', 60)]
+
+Entidade: Rorge
+Relacionadas [('Mandon Moore', 67), ('Stony Shore', 67), ('Alliser Thorne', 60), ('Axell Florent', 60)]
+
+Entidade: Ros
+Relacionadas [('Battle of Oxcross', 67), ('Boros Blount of the Kingsguard', 67), ('Braavosi Water Dancer', 67), ('Commander Janos Slynt', 67)]
+
+Entidade: Roslin
+Relacionadas [('Roslin Frey', 83), ("Lord 's Chosen", 55), ('Balon King of the Iron Islands', 50), ('Battle of the Whispering Wood', 50)]
+
+Entidade: Royal
+Relacionadas [('Royal Fleet', 80), ('Amory Lorch', 60), ('Lands of Always Winter', 60), ('Olyvar Frey', 60)]
+
+Entidade: Royce
+Relacionadas [('Waymar Royce', 80), ('Yohn Royce', 80), ('Grand Maester Pycelle', 60), ('Greyjoy Rebellion', 60)]
+
+Entidade: Runestone
+Relacionadas [('Dragonstone Isle', 67), ('House Baratheon of Dragonstone', 67), ('Houses Jon', 59), ('Targaryen Conquest', 57)]
+
+Entidade: Salladhor
+Relacionadas [('Salladhor Saan', 89), ('Great Sept of Baelor', 57), ('Doran Martell of Dorne', 56), ('House Martell of Dorne', 56)]
+
+Entidade: Sam
+Relacionadas [('Aemon Sam', 67), ('Aemon Targaryen', 67), ('Amory Lorch', 67), ('Army of the Dead', 67)]
+
+Entidade: Samwell
+Relacionadas [('Samwell Tarly', 86), ('The Long Farewell', 71), ('Axell Florent', 57), ('Doran Martell', 57)]
+
+Entidade: Sand
+Relacionadas [('AND Wylis', 75), ('Acting Hand of the King', 75), ('Balon King of the Iron Islands', 75), ('Bear Island', 75)]
+
+Entidade: Sandor
+Relacionadas [('Sandor Clegane', 83), ('Acting Hand of the King', 67), ('Brandon the Builder', 67), ('Commander Alliser Thorne', 67)]
+
+Entidade: Sands
+Relacionadas [('Balon King of the Iron Islands', 80), ('Iron Islands', 80), ('King of the Iron Islands', 80), ('Lands of Always Winter', 80)]
+
+Entidade: Sansa
+Relacionadas [('Sansa Meanwhile', 80), ('Sansa Robb', 80), ('Sansa Stark', 80), ('Sansa the Moon Door', 80)]
+
+Entidade: Savo
+Relacionadas [('Braavosi Water Dancer', 75), ('Davos An History of Aegon the Conqueror', 75), ('Davos Seaworth', 75), ('First Sword of Braavos', 75)]
+
+Entidade: Seaworth
+Relacionadas [('Davos Seaworth', 88), ('Matthos Seaworth', 88), ('Lollys Stokeworth', 80), ('Castle Stokeworth', 75)]
+
+Entidade: Selmy
+Relacionadas [('Barristan Selmy', 80), ('Commander Barristan Selmy', 80), ('Protector of the Realm', 67), ('Casterly Rock', 60)]
+
+Entidade: Selwyn
+Relacionadas [('Selwyn Tarth', 83), ('Selwyn of Tarth', 83), ('Catelyn Stark', 67), ('Donnel Waynwood', 67)]
+
+Entidade: Selyse
+Relacionadas [('Queen Selyse', 83), ('Queen Selyse Baratheon', 83), ('Barristan Selmy', 60), ('Commander Barristan Selmy', 60)]
+
+Entidade: Sept
+Relacionadas [('Great Sept', 75), ('Great Sept of Baelor', 75), ('High Septon', 75), ('High Septon of the Faith of the Seven', 75)]
+
+Entidade: Septas
+Relacionadas [('Septa Mordane', 67), ('Septa Unella', 67), ('Great Sept', 60), ('Barristan Selmy', 50)]
+
+Entidade: Septon
+Relacionadas [('High Septon', 83), ('High Septon of the Faith of the Seven', 83), ('Great Sept of Baelor', 67), ('Greatjon Umber', 67)]
+
+Entidade: Seven
+Relacionadas [('Faith of the Seven', 80), ('High Septon of the Faith of the Seven', 80), ('Lord of the Seven Kingdoms', 80), ('Seven Kingdoms', 80)]
+
+Entidade: Shadow
+Relacionadas [('Commander of the Shadow Tower', 83), ('Shadow Lands', 83), ('The Shadow Tower', 83), ('Acting Hand of the King', 67)]
+
+Entidade: Shadow-creature
+Relacionadas [('Red Waste', 62), ('Great Houses', 60), ('Arthur Dayne', 56), ('Great Sept', 56)]
+
+Entidade: Shae
+Relacionadas [('Crown Prince Rhaegar Targaryen', 75), ('Essence of Nightshade', 75), ('High Priestess of the Dosh Khaleen', 75), ('Rhaegar Targaryen', 75)]
+
+Entidade: Shagga
+Relacionadas [('Crown Prince Rhaegar Targaryen', 67), ('Rhaegar Targaryen', 67), ('Aegon I Targaryen', 50), ('Aegon Targaryen', 50)]
+
+Entidade: Shaggydog
+Relacionadas [('Khal Drogo', 56), ('Acting Hand of the King', 44), ('Commander of the Shadow Tower', 44), ('Dance of the Dragons', 44)]
+
+Entidade: Shireen
+Relacionadas [('Princess Shireen', 86), ('Princess Shireen Baratheon', 86), ('Princess Shireen of House Baratheon', 86), ("Shireen 's Greyscale", 86)]
+
+Entidade: Sight
+Relacionadas [('Commander Gerold Hightower', 80), ("Commander Jeor Mormont of the Night 's Watch", 80), ("Commander of the Night 's Watch", 80), ('Essence of Nightshade', 80)]
+
+Entidade: Sissy
+Relacionadas [('Commander Janos Slynt', 60), ('Janos Slynt', 60), ('Missandei of Naath', 60), ('Princess Myrcella', 60)]
+
+Entidade: Slynt
+Relacionadas [('Commander Janos Slynt', 80), ('Janos Slynt', 80), ('Aunt Lyanna', 60), ('Boros Blount of the Kingsguard', 60)]
+
+Entidade: Smalljon
+Relacionadas [('Smalljon Umber', 88), ('Jon Sn', 67), ('Small Council', 62), ('Stallion Who Mounts the World', 62)]
+
+Entidade: Snow
+Relacionadas [('Commander Jon Snow', 75), ('Commander Snow', 75), ('Jon Snow', 75), ('Ramsay Snow', 75)]
+
+Entidade: Sons
+Relacionadas [('Aemon Sam', 75), ('Commander Jon Snow', 75), ('Dance of the Dragons', 75), ('Dragonstone Isle', 75)]
+
+Entidade: South
+Relacionadas [('Acting Hand of the King', 60), ('Aegon the Conquer', 60), ('Aegon the Conqueror', 60), ('Areo Hotah', 60)]
+
+Entidade: Sparrow
+Relacionadas [('High Sparrow', 86), ('Narrow Sea', 71), ('Beric Dondarrion', 57), ('Paramount of the Vale', 57)]
+
+Entidade: Sparrows
+Relacionadas [('High Sparrow', 80), ('Narrow Sea', 75), ('Master of Whisperers', 57), ('Beric Dondarrion', 53)]
+
+Entidade: Stannis
+Relacionadas [('King Stannis', 86), ('King Stannis Baratheon', 86), ('Podrick Payne of Stannis', 86), ('Stannis Baratheon', 86)]
+
+Entidade: Stannis'
+Relacionadas [('King Stannis', 80), ('Podrick Payne of Stannis', 80), ('King Stannis Baratheon', 75), ('Stannis Baratheon', 75)]
+
+Entidade: Stark
+Relacionadas [('Arya Stark', 80), ('Benjen Stark', 80), ('Bran Stark', 80), ('Catelyn Stark', 80)]
+
+Entidade: Starks
+Relacionadas [('Arya Stark', 73), ('Benjen Stark', 73), ('Bran Stark', 73), ('Catelyn Stark', 73)]
+
+Entidade: Steelshanks
+Relacionadas [('Tyene Sand', 60), ('Lommy Greenhands', 57), ('Catelyn Stark', 55), ('Night Lands', 53)]
+
+Entidade: Stormcrows
+Relacionadas [('Daenerys Stormborn of House Targaryen', 60), ('Daenerys Stormborn', 56), ('Battle of Oxcross', 50), ('King of Westeros', 50)]
+
+Entidade: Stormlands
+Relacionadas [('Night Lands', 67), ('AND Wylis', 62), ('Alton Lannister', 60), ('Balon King of the Iron Islands', 60)]
+
+Entidade: Styr
+Relacionadas [('House Tyrell', 75), ('House Tyrell of the Reach', 75), ('King Tyrion Lannister', 75), ('Loras Tyrell', 75)]
+
+Entidade: Sumai
+Relacionadas [('Denys Mallister', 60), ('Magister Illyrio Mopatis', 60), ('Magister Illyrio Mopatis of Pentos', 60), ('Maiden Fair', 60)]
+
+Entidade: Summer
+Relacionadas [("Mummer 's Ford", 83), ('Summer Isles', 83), ('Greatjon Umber', 67), ('House Umber', 67)]
+
+Entidade: Sunspear
+Relacionadas [('Daenerys Stormborn of House Targaryen', 62), ('House Arryn', 62), ('House Baratheon', 62), ('House Baratheon of Dragonstone', 62)]
+
+Entidade: Syrio
+Relacionadas [('Illyrio Mopatis', 80), ('King Tyrion Lannister', 80), ('Magister Illyrio Mopatis', 80), ('Magister Illyrio Mopatis of Pentos', 80)]
+
+Entidade: Talisa
+Relacionadas [('Queen Talisa', 83), ('Talisa Maegyr', 83), ('Talisa of Volantis', 83), ('Alliser Thorne', 67)]
+
+Entidade: Targaryen
+Relacionadas [('Aegon I Targaryen', 89), ('Aegon Targaryen', 89), ('Aemon Targaryen', 89), ('Aerys Targaryen', 89)]
+
+Entidade: Targaryens
+Relacionadas [('Aegon I Targaryen', 84), ('Aegon Targaryen', 84), ('Aemon Targaryen', 84), ('Aerys Targaryen', 84)]
+
+Entidade: Tarly
+Relacionadas [('Randyll Tarly', 80), ('Samwell Tarly', 80), ('At Karl', 67), ('Aegon I Targaryen', 60)]
+
+Entidade: Tarth
+Relacionadas [('Arthur Dayne', 80), ('Brienne of Tarth', 80), ("Commander of Robert Baratheon 's Kingsguard", 80), ('House Baratheon', 80)]
+
+Entidade: Terys
+Relacionadas [('Aerys Targaryen', 80), ('Aerys the Lannisters', 80), ('Daenerys Stormborn', 80), ('Daenerys Stormborn of House Targaryen', 80)]
+
+Entidade: Thenn
+Relacionadas [('House Baratheon', 67), ('Joffrey Baratheon', 67), ('King Joffrey Baratheon', 67), ('King Renly Baratheon', 67)]
+
+Entidade: Thenns
+Relacionadas [('Kraznys The Unsullied', 67), ("Torrhen 's Square", 67), ('House Baratheon', 60), ('Joffrey Baratheon', 60)]
+
+Entidade: Theon
+Relacionadas [("Commander of Robert Baratheon 's Kingsguard", 80), ('House Baratheon', 80), ('House Baratheon of Dragonstone', 80), ('Joffrey Baratheon', 80)]
+
+Entidade: Thin
+Relacionadas [('Thin Man', 75), ('Quaithe of Asshai', 57), ('Acting Hand of the King', 50), ('Alliser Thorne', 50)]
+
+Entidade: Thirteen
+Relacionadas [('The Thirteen', 88), ('Princess Shireen', 80), ('Princess Shireen Baratheon', 75), ('Princess Shireen of House Baratheon', 75)]
+
+Entidade: Thorne
+Relacionadas [('Alliser Thorne', 83), ('Commander Alliser Thorne', 83), ('Iron Throne', 73), ('Salt Throne', 73)]
+
+Entidade: Thoros
+Relacionadas [('Thoros of Myr', 83), ('Battle of Oxcross', 67), ('Boros Blount of the Kingsguard', 67), ('Dolorous Edd', 67)]
+
+Entidade: Three-eyed
+Relacionadas [('Three-Eyed Raven', 80), ('Three-eyed Raven', 80), ('The Eyrie', 56), ('Bloody Gate of the Eyrie', 53)]
+
+Entidade: Throne
+Relacionadas [('Iron Throne', 83), ('Salt Throne', 83), ('Throne Room', 83), ('Alliser Thorne', 73)]
+
+Entidade: Tickler
+Relacionadas [('The Tickler', 86), ('Brandon the Builder', 62), ('Battle of the Blackwater', 57), ('Blackwater Bay', 57)]
+
+Entidade: Tollett
+Relacionadas [('Eddison Tollett', 86), ('Maester Caleotte', 57), ('Royal Fleet', 57), ('Grand Maester Pycelle', 50)]
+
+Entidade: Tommen
+Relacionadas [('After Tommen', 83), ('King Tommen', 83), ('King Tommen Baratheon', 83), ('Tommen Baratheon', 83)]
+
+Entidade: Tormund
+Relacionadas [('Tormund Giantsbane', 86), ('The Hound', 67), ('Commander Barristan Selmy', 57), ('Commander Gerold Hightower', 57)]
+
+Entidade: Torrhen
+Relacionadas [("Torrhen 's Square", 86), ('Torrhen Karstark', 86), ('Northern Lords', 71), ('Axell Florent', 62)]
+
+Entidade: Tower
+Relacionadas [('Broken Tower', 80), ('Commander Gerold Hightower', 80), ('Commander of the Shadow Tower', 80), ('Gerold Hightower', 80)]
+
+Entidade: Townshall
+Relacionadas [('The Wall', 62), ('Hollow Hill', 59), ('Denys Mallister', 56), ('Dontos Hollard', 56)]
+
+Entidade: Trant
+Relacionadas [('Meryn Trant', 80), ('Meryn Trant Ser Meryn Trant', 80), ('Meryn Trant of the Kingsguard', 80), ('Black Rat', 67)]
+
+Entidade: Trident
+Relacionadas [('Battle of the Trident', 86), ('Green Fork of Trident River', 86), ('Green Fork of the River Trident', 86), ('Red Fork of the Trident', 86)]
+
+Entidade: Trystane
+Relacionadas [('Trystane Martell', 88), ('Trystane Martell Jaime', 88), ('Aerys Targaryen', 62), ('Aerys the Lannisters', 62)]
+
+Entidade: Tully
+Relacionadas [('Brynden Tully', 80), ('Edmure Tully', 80), ('Hoster Tully', 80), ('House Tully', 80)]
+
+Entidade: Tullys
+Relacionadas [('Brynden Tully', 73), ('Edmure Tully', 73), ('Hoster Tully', 73), ('House Tully', 73)]
+
+Entidade: Twins
+Relacionadas [('The Twins', 80), ('Maester Luwin', 67), ('AND Wylis', 60), ('Baelish At Winterfell', 60)]
+
+Entidade: Tycho
+Relacionadas [('Tycho Nestoris', 80), ('Belicho Paenymion', 60), ("Lord 's Chosen", 60), ('Stony Shore', 60)]
+
+Entidade: Tyene
+Relacionadas [('Tyene Sand', 80), ('Aegon I Targaryen', 67), ('Aegon Targaryen', 67), ('Aemon Targaryen', 67)]
+
+Entidade: Tyrell
+Relacionadas [('House Tyrell', 83), ('House Tyrell of the Reach', 83), ('Loras Tyrell', 83), ('Mace Tyrell', 83)]
+
+Entidade: Tyrells
+Relacionadas [('House Tyrell', 77), ('Loras Tyrell', 77), ('Mace Tyrell', 77), ('Margaery Tyrell', 77)]
+
+Entidade: Tyrion
+Relacionadas [('King Tyrion Lannister', 83), ('Tyrion Lannister', 83), ('Belicho Paenymion', 67), ('Beric Dondarrion', 67)]
+
+Entidade: Tysha
+Relacionadas [('Aerys Targaryen', 60), ('Baelish At Winterfell', 60), ('Commander of the Shadow Tower', 60), ('Daenerys Targaryen', 60)]
+
+Entidade: Tywin
+Relacionadas [('Grey Wind', 80), ('Tywin Lannister', 80), ('Baelish At Winterfell', 60), ('Belicho Paenymion', 60)]
+
+Entidade: Umber
+Relacionadas [('Chamber of the Painted Table', 80), ('Greatjon Umber', 80), ('House Umber', 80), ('Smalljon Umber', 80)]
+
+Entidade: Umbers
+Relacionadas [('Greatjon Umber', 73), ('House Umber', 73), ('Smalljon Umber', 73), ('Chamber of the Painted Table', 67)]
+
+Entidade: Unella
+Relacionadas [('Septa Unella', 83), ('Donnel Waynwood', 67), ('Ellaria Sand', 67), ('First Builder Othell Yarwyck', 67)]
+
+Entidade: Unsullied
+Relacionadas [('Kraznys The Unsullied', 89), ('Denys Mallister', 56), ('Brynden Tully', 50), ('Boros Blount of the Kingsguard', 47)]
+
+Entidade: Vala
+Relacionadas [('Lands of Always Winter', 75), ('Salladhor Saan', 75), ('Valar Morghulis', 75), ('Walda Bolton', 75)]
+
+Entidade: Valahd
+Relacionadas [('Salladhor Saan', 67), ('Missandei of Naath', 55), ('Baelish At Winterfell', 50), ('Balon King of the Iron Islands', 50)]
+
+Entidade: Vale
+Relacionadas [('Black Walder', 75), ('Black Walder Rivers', 75), ('Castle Black of the White Walker', 75), ('Chamber of the Painted Table', 75)]
+
+Entidade: Valyria
+Relacionadas [('Doom of Valyria', 86), ('High Valyrian', 86), ('Low Valyrian', 86), ('Old Valyria', 86)]
+
+Entidade: Valyrian
+Relacionadas [('High Valyrian', 88), ('Low Valyrian', 88), ('Stark Valyrian', 88), ('Doom of Valyria', 80)]
+
+Entidade: Vardis
+Relacionadas [('Vardis Egen', 83), ('Barristan Selmy', 67), ('Bear Island', 67), ('Commander Barristan Selmy', 67)]
+
+Entidade: Varys
+Relacionadas [('Aerys the Lannisters', 80), ('King Aerys', 80), ('Queen Margaery', 67), ('Randyll Tarly', 67)]
+
+Entidade: Vhagar
+Relacionadas [('Crown Prince Rhaegar Targaryen', 83), ('Rhaegar Targaryen', 83), ('Aegon I Targaryen', 67), ('Aegon Targaryen', 67)]
+
+Entidade: Viper
+Relacionadas [('Battle of the Whispering Wood', 80), ('Master of Whisperers', 80), ('Whispering Wood', 80), ('Alliser Thorne', 60)]
+
+Entidade: Viserion
+Relacionadas [('Battle of the Whispering Wood', 75), ('Whispering Wood', 75), ('Alton Lannister', 62), ('As Cersei Lannister', 62)]
+
+Entidade: Viserys
+Relacionadas [('Silent Sisters', 77), ('The Lannisters', 77), ('Aerys the Lannisters', 71), ('Alton Lannister', 67)]
+
+Entidade: Volantene
+Relacionadas [('Free City of Volantis', 59), ('High Priestess of the Red Temple of Volantis', 59), ('Karl Tanner', 59), ('Long Bridge of Volantis', 59)]
+
+Entidade: Volantis
+Relacionadas [('Free City of Volantis', 88), ('High Priestess of the Red Temple of Volantis', 88), ('Long Bridge of Volantis', 88), ('Talisa of Volantis', 88)]
+
+Entidade: Waif
+Relacionadas [('The Waif', 75), ('The Waif In Braavos', 75), ('Old Ghiscari', 57), ('Wise Masters of Yunkai', 57)]
+
+Entidade: Walda
+Relacionadas [('Walda Bolton', 80), ('Black Walder', 60), ('Black Walder Rivers', 60), ('Harald Karstark', 60)]
+
+Entidade: Walder
+Relacionadas [('Black Walder', 83), ('Black Walder Rivers', 83), ('Walder Frey', 83), ('Brandon the Builder', 67)]
+
+Entidade: Walker
+Relacionadas [('Castle Black of the White Walker', 83), ('White Walker', 83), ('White Walkers', 83), ('Black Walder', 67)]
+
+Entidade: Walkers
+Relacionadas [('White Walkers', 86), ('Castle Black of the White Walker', 77), ('White Walker', 77), ('Black Walder', 62)]
+
+Entidade: Wall
+Relacionadas [('Alliser Thorne', 75), ('Beyond the Wall', 75), ('Commander Alliser Thorne', 75), ('Denys Mallister', 75)]
+
+Entidade: Watch
+Relacionadas [('City Watch', 80), ("Commander Jeor Mormont of the Night 's Watch", 80), ('Commander of the City Watch', 80), ("Commander of the King 's Landing City Watch", 80)]
+
+Entidade: Waymar
+Relacionadas [('Waymar Royce', 83), ('Doran Martell', 67), ('Doran Martell of Dorne', 67), ('Elia Martell', 67)]
+
+Entidade: Waynwood
+Relacionadas [('Anya Waynwood', 88), ('Donnel Waynwood', 88), ('Battle of the Whispering Wood', 62), ('Whispering Wood', 62)]
+
+Entidade: Weirwood
+Relacionadas [('Battle of the Whispering Wood', 62), ('Brotherhood Without Banners', 62), ('Deepwood Motte', 62), ('The Brotherhood', 62)]
+
+Entidade: Westerlands
+Relacionadas [('Order of Maesters', 67), ('Maester Aemon', 64), ('Maester Luwin', 64), ('Maester Wolkan', 64)]
+
+Entidade: Westeros
+Relacionadas [('Common Tongue of Westeros', 88), ('His Conquest of Westeros', 88), ('King of Westeros', 88), ('Order of Maesters', 80)]
+
+Entidade: Westerosi
+Relacionadas [('Common Tongue of Westeros', 82), ('His Conquest of Westeros', 82), ('King of Westeros', 82), ('Order of Maesters', 75)]
+
+Entidade: Westoros
+Relacionadas [('Common Tongue of Westeros', 75), ('His Conquest of Westeros', 75), ('King of Westeros', 75), ('Tycho Nestoris', 75)]
+
+Entidade: White
+Relacionadas [('Castle Black of the White Walker', 80), ('The Thirteen', 80), ('White Harbor', 80), ('White Rat', 80)]
+
+Entidade: Wights
+Relacionadas [('Essence of Nightshade', 83), ('Nights Watch', 83), ('Long Night', 73), ('Lord of Light', 73)]
+
+Entidade: Wildfire
+Relacionadas [('Children of the Forest', 62), ('Walder Frey', 62), ('Brandon the Builder', 57), ('First Builder', 57)]
+
+Entidade: Wildling
+Relacionadas [("King 's Landing", 62), ("King's Landing", 62), ('Moat Cailin', 62), ("Sack of King 's Landing", 62)]
+
+Entidade: Wildlings
+Relacionadas [('Moat Cailin', 57), ("King 's Landing", 56), ("King's Landing", 56), ("Sack of King 's Landing", 56)]
+
+Entidade: Will
+Relacionadas [('Battle of Stone Mill', 75), ('Gilly the Dragonglass', 75), ('Hollow Hill', 75), ('Horn Hill', 75)]
+
+Entidade: Willem
+Relacionadas [('Willem Lannister', 83), ('Battle of Stone Mill', 60), ('Hollow Hill', 60), ('Horn Hill', 60)]
+
+Entidade: Wind
+Relacionadas [('Grey Wind', 75), ('Lord of the Seven Kingdoms', 75), ('Seven Kingdoms', 75), ('Great Pyramid', 57)]
+
+Entidade: Winter
+Relacionadas [('Baelish At Winterfell', 83), ('Lands of Always Winter', 83), ('Lord of Winterfell', 83), ('Sack of Winterfell', 83)]
+
+Entidade: Winterfell
+Relacionadas [('Baelish At Winterfell', 90), ('Lord of Winterfell', 90), ('Sack of Winterfell', 90), ('Stark of Winterfell', 90)]
+
+Entidade: Wise
+Relacionadas [('Aerys the Lannisters', 75), ('Alliser Thorne', 75), ('Alton Lannister', 75), ('As Cersei Lannister', 75)]
+
+Entidade: Wolfswood
+Relacionadas [("Maegor 's Holdfast", 50), ('Old Gods', 50), ('Anya Waynwood', 44), ('Battle of Ashford', 44)]
+
+Entidade: Woods
+Relacionadas [('Anya Waynwood', 67), ('Battle of the Whispering Wood', 67), ('Donnel Waynwood', 67), ('The Brotherhood', 67)]
+
+Entidade: Worm
+Relacionadas [('Commander Jeor Mormont', 75), ("Commander Jeor Mormont of the Night 's Watch", 75), ('Commander Mormont', 75), ('Daenerys Stormborn', 75)]
+
+Entidade: Wyl
+Relacionadas [('AND Wylis', 67), ('Amory Lorch', 67), ('My Lord', 67), ('Randyll Tarly', 67)]
+
+Entidade: Wylis
+Relacionadas [('AND Wylis', 80), ('Alliser Thorne', 60), ('Baelish At Winterfell', 60), ('Black Cliffs', 60)]
+
+Entidade: Wylla
+Relacionadas [('Dontos Hollard', 60), ('Ellaria Sand', 60), ('First Builder Othell Yarwyck', 60), ('House Tyrell', 60)]
+
+Entidade: X-shaped
+Relacionadas [('Essence of Nightshade', 53), ("King 's Hand", 53), ('Commander of the Shadow Tower', 50), ('Haunted Forest', 50)]
+
+Entidade: Xaro
+Relacionadas [('Aeron Greyjoy', 75), ('Areo Hotah', 75), ('Daario Naharis', 75), ('High Sparrow', 75)]
+
+Entidade: Yara
+Relacionadas [('Aegon I Targaryen', 75), ('Aegon Targaryen', 75), ('Aemon Targaryen', 75), ('Aerys Targaryen', 75)]
+
+Entidade: Yezzan
+Relacionadas [('Aerys the Lannisters', 50), ('As Cersei Lannister', 50), ('Braavosi Water Dancer', 50), ('Brother Lancel', 50)]
+
+Entidade: Ygritte
+Relacionadas [('High Priestess of the Dosh Khaleen', 57), ('High Priestess of the Red Temple of Volantis', 57), ('High Red Priestess', 57), ('Little Bird', 57)]
+
+Entidade: Yohn
+Relacionadas [('Yohn Royce', 75), ("Harpy 's Son", 57), ('High Septon', 57), ('King Renly Baratheon', 57)]
+
+Entidade: Yoren
+Relacionadas [('Axell Florent', 80), ('House Florent', 80), ("Yoren of the Night 's Watch", 80), ('Alliser Thorne', 67)]
+
+Entidade: Yunkai
+Relacionadas [('Wise Masters of Yunkai', 83), ("Yunkai'i Wise Master Razdal", 83), ('Mountain That Rides', 67), ('The Mountain', 67)]
+
+Entidade: Zalla
+Relacionadas [('Salladhor Saan', 80), ('Beyond the Wall', 67), ('Duncan the Tall', 67), ("Eyrie 's High Hall", 67)]
+
