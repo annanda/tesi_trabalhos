@@ -43,7 +43,7 @@ class ArticleReader:
                 if capture:
                     captured.append(line)
 
-            captured = captured[1:]  # remove PlotEdit
+            captured = captured[1:]  # remove a linha "Plot"
 
             self.texto_pre_processado = "\n".join(captured)
 
@@ -60,6 +60,8 @@ for season in seasons_files:
     for episode in episodes_files:
         episode_name = os.path.basename(episode)
         save_dir = os.path.join("pre_processed_documents", season_name)
+
         os.makedirs(save_dir, exist_ok=True)
+
         article = ArticleReader(episode)
         article.save_pre_processed_file(os.path.join(save_dir, episode_name))

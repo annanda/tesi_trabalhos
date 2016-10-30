@@ -22,7 +22,9 @@ class NEExtractor:
 
         sentences = []
         for line in lines:
-            sentences += nltk.sent_tokenize(line)
+            tokenized_lines = nltk.sent_tokenize(line)
+            for tokenized_line in tokenized_lines:
+                sentences += re.split(r'[^\.]\.\s', tokenized_line)
 
         tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
         tagged_sentences = [nltk.pos_tag(sentence) for sentence in tokenized_sentences]
