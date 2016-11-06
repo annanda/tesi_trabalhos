@@ -213,6 +213,8 @@ print("Entidades com place: {0} ({1})".format(quantas_entidades_com_place,
 
 # Tirar ' no final do nomes
 
+# Substituit '' e `` por "
+
 # O que fazer com ens que são "Lady", "Lord Commander", "Lord 's Choosen", etc...
 
 # Palavra The:
