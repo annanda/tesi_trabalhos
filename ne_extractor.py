@@ -57,7 +57,7 @@ def get_ne(tagged_sentences):
                     ne = remove_unfinished_complements(ne)
                     named_entity = sentence_text(ne)
 
-                    # resolve quando o 's no final de uma palavra não é separado em outro token
+                    # resolve quando o 's no final de uma palavra não é separado em outro term
                     if len(named_entity) > 2 and named_entity.endswith("'s"):
                         named_entity = named_entity[:-2]
 

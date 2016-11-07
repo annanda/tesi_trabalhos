@@ -1,15 +1,18 @@
 import glob
 import os
+from collections import Counter
+
 import nltk
+import math
 
 
 def remove_meaningless_tokens(tokens):
     meaningless_tokens = [".", ",", "'", ":", "!", ";",
                           "?", "]", "[", "&", "-", "...",
                           ")", "(", "``", "--", "'s", "i.e",
-                          "'d",   # he'd, they'd
-                          "'m",   # I'm
-                          "''",   # não aparece no texto, mas tem um token com isso
+                          "'d",  # he'd, they'd
+                          "'m",  # I'm
+                          "''",  # não aparece no texto, mas tem um term com isso
                           "'ve",  # they've
                           "'re",  # they're
                           "n't",  # doesn't
@@ -60,16 +63,30 @@ def tokenize_document(text):
     return document_tokens
 
 
+def calculate_score(dindex, tindexes, tf_idf):
+    result = 0
+    for tindex in tindexes:
+        result += tf_idf[tindex][dindex]
+
+    return result
+
+
 t = []
 t_c = []
 all_text = ""
 
-docs = {}
+terms = []
+documents = []
+tokens_by_document = {}
+freq_by_document = {}
 seasons_files = glob.glob("pre_processed_documents/*")
 for season in seasons_files:
     season_name = os.path.basename(season)
 
     episodes_files = glob.glob(season + "/*.txt")
+
+    # episodes_files = ["tests/tfidf1.txt", "tests/tfidf2.txt", "tests/tfidf3.txt"]
+
     for episode_file in episodes_files:
         episode_name = os.path.basename(episode_file)
 
@@ -82,9 +99,58 @@ for season in seasons_files:
 
         t_c.extend(document_tokens)
 
-        docs[document_name] = document_tokens
+        terms.extend(document_tokens)
+        freq_by_document[document_name] = Counter(document_tokens)
+        documents.append(document_name)
 
-print(len(set(t_c)))
+        # break
+
+terms = list(set(terms))  # tira repetidos
+idf_by_term = dict()
+tf_idf = []
+
+for term in terms:
+    tf = []
+    number_of_documents_with_term = 0
+    for document in documents:
+        freq = freq_by_document[document][term]
+
+        if freq > 0:
+            number_of_documents_with_term += 1
+
+        tf.append(freq)
+
+    idf_by_term[term] = math.log(len(documents) / number_of_documents_with_term)
+
+    tf = [tf_t * idf_by_term[term] for tf_t in tf]
+
+    tf_idf.append(tf)
+
+search_query = "Eddard Stark"
+document_tokens = tokenize_document(search_query)
+existing_terms = set(terms).intersection(document_tokens)  # remove termos que não existem nos documentos
+
+scores = []
+for i, document in enumerate(documents):
+    tindexes = []
+    for term in existing_terms:
+        tindexes.append(terms.index(term))
+
+    score = calculate_score(i, tindexes, tf_idf)
+    scores.append((score, document))
+
+# print(scores)
+print([score[1] for score in sorted(scores, key=lambda s: s[0], reverse=True)])
+
+# freq = Counter(document_tokens)
+# d = []
+# for term in terms:
+#     d.append(freq[term] * idf_by_term[term])
+
+
+
+
+# print(len(set(t_c)))
 
 # with open("all_text.txt", "w+", encoding='utf-8') as output_file:
 #     output_file.write(all_text)
@@ -92,3 +158,7 @@ print(len(set(t_c)))
 # for _ in set(t_c):
 #     if len(_) == 3:
 #         print(_)
+
+# rever quais palavras remover!
+# usar o SVD para diminuir a dimensão do problema
+# usar a comparação com coseno
