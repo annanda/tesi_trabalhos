@@ -2,7 +2,7 @@ import jsonpickle
 from ne import EN
 import nltk
 import glob
-import os.path
+import re
 
 
 def extract_nes(file_path):
@@ -113,6 +113,11 @@ def extract_nes_from_episodes():
     nes = []
 
     seasons_dirs = glob.glob("pre_processed_documents/*")
+
+    if len(seasons_dirs) == 0:
+        print("Nenhum episodio achado...")
+        exit(-1)
+
     for season_dir in seasons_dirs:
         # season_name = os.path.basename(season_dir)
 
