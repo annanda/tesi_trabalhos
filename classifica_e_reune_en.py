@@ -169,7 +169,7 @@ for entidade in entidades:
         if sounds_like_a_place > 5:
             entidade.classification = "place"
 
-with open("classifica_e_reune10.csv", 'w+') as file:
+with open("classifica_e_reune11.csv", 'w+') as file:
     for entidade in entidades:
         file.write(str(entidade))
         file.write("\n")
