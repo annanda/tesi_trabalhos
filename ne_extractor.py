@@ -1,3 +1,5 @@
+from collections import Counter
+
 import jsonpickle
 from ne import EN
 import nltk
@@ -22,6 +24,10 @@ def tag_sentences(text):
             sentences += re.split(r'[^\.]\.\s', tokenized_line)
 
     tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
+
+    for s in tokenized_sentences:
+        to.extend(s)
+
     tagged_sentences = [nltk.pos_tag(sentence) for sentence in tokenized_sentences]
 
     return tagged_sentences
@@ -30,12 +36,16 @@ def tag_sentences(text):
 def get_ne(tagged_sentences):
     named_entities = []
 
+    is_dirty = False
+
     ne = []
     for i, sentence in enumerate(tagged_sentences):
         start_index = None
         for j, tagged_word in enumerate(sentence):
 
             if j == 0:
+                # if is_first_letter_upper(tagged_word):
+                #     is_dirty = True
                 continue
 
             if is_first_letter_upper(tagged_word):
@@ -65,8 +75,18 @@ def get_ne(tagged_sentences):
                         en = EN(named_entity)
                         en.start_index = start_index
                         en.sentence = sentence_without_tag(sentence)
-                        named_entities.append(en)
 
+                        # if is_dirty:
+                        #     firsts.append(en)
+                        # else:
+                        named_entities.append(en)
+                else:
+                    en = EN(sentence_text(ne))
+                    en.start_index = start_index
+                    en.sentence = sentence
+                    t.append(en)
+
+                # is_dirty = False
                 start_index = None
                 ne.clear()
 
@@ -83,7 +103,7 @@ def sentence_without_tag(sentence):
 
 def is_complement(word):
     text = word[0]
-    return text in ("of", "the", "'s")
+    return text in ("of", "the", "'s", "'")
 
 
 def is_first_letter_upper(word):
@@ -94,7 +114,7 @@ def is_first_letter_upper(word):
 def has_np(ne):
     for word in ne:
         tag = word[1]
-        if tag == 'NN' or tag == 'NNP':
+        if tag in ['NN', 'NNP', 'NNS', 'NNPS']:
             return True
     return False
 
@@ -130,7 +150,6 @@ def extract_nes_from_episodes():
 
 
 def create_ne_csv(named_entities):
-
     named_entities = map(lambda ne: ne.original, named_entities)
 
     # para nao repetir os elementos
@@ -156,10 +175,79 @@ def create_ne_json(named_entities):
         file.write(jsonpickle.encode(named_entities))
 
 
+t = []
+to = []
+firsts = []
+
 if __name__ == "__main__":
     entities = extract_nes_from_episodes()
+
+    # before_e = [e.sentence[e.start_index - 1] for e in entities]
+    # for _ in set(before_e):
+    #     print(_)
+
+    to = Counter(to)
+
+    print("\n==Perdidas por não ter NP=====================")
+
+    names = [ne.original for ne in entities]
+    freq = Counter(names)
+
+    print("Perdidas", len(t))
+    print("Perdidas Unicas", len(set(t)))
+    for e in set(t):
+        if freq[e.original] == 0:
+            print(e.sentence[e.start_index:e.start_index + len(e.owords)], e.sentence)
+
+    print("\n==Depois de abertura de fala=====================")
+
+    c = []
+    for e in entities:
+        if e.sentence[e.start_index - 1] in ["''", "``", "'"]:
+            c.append(e)
+
+    # c = set(c)
+    tuples = []
+    for e in c:
+        first = e.sentence[e.start_index]
+        tuples.append((first,
+                      to[first],
+                      to[first.lower()],
+                      e.original,
+                      freq[e.original],
+                      e.sentence))
+    tuples.sort(key=lambda it: it[2])
+    for t in tuples:
+        print("{0} (Upper: {1}, Lower: {2}) {3} (freq: {4}) - {5}".format(t[0], t[1], t[2], t[3], t[4], t[5]))
+
+    print("Que vem depois de abertura de fala:", len(c))
+
+    print("\n==Que vem depois de uma palavra com maiuscula=====================")
+
+    d = []
+    for e in entities:
+        if e.sentence[e.start_index - 1][0].isupper():
+            d.append(e)
+
+    # d = set(d)
+    tuples = []
+    for e in d:
+        word_before = e.sentence[e.start_index - 1]
+        tuples.append((word_before,
+                       to[word_before],
+                       to[word_before.lower()],
+                       e.original,
+                       freq[e.original],
+                       e.sentence
+                       ))
+    tuples.sort(key=lambda it: it[2])
+    for t in tuples:
+        print("{0} (Upper: {1}, Lower: {2}) {3} (freq: {4}) - {5}".format(t[0], t[1], t[2], t[3], t[4], t[5]))
+
+    print("Depois de palavra com maiúscula:", len(d))
+
     create_ne_csv(entities)
-    create_ne_json(entities)
+    # create_ne_json(entities)
     create_ne_with_sentence_csv(entities)
 
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
@@ -190,3 +278,13 @@ if __name__ == "__main__":
 
 # ignorando sempre a primeira palavra de cada sentenca
 # 1227 entidades nomeadas
+
+# Começos de frases
+# - não
+# ' não, a não ser quando termina ''
+# & não, só aparece em Black and White
+# ( não
+# , não
+# ''
+# ; não
+# ``
