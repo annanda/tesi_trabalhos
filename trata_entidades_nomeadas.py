@@ -42,6 +42,12 @@ with open("novas_entidades_nomeadas.csv", 'r') as test_file:
             entidades_um_nome.append(ne.replace("\n", ""))
 entidades_relacionadas = {}
 
+# with open("entidades_nomeadas_relacionadas", 'w') as test_file:
+#    for um_nome in entidades_um_nome:
+#          entidades_relacionadas[um_nome] = process.extract(um_nome, entidades_mais_nome, scorer=fuzz.partial_ratio, limit=4)
+#          test_file.write("Entidade: " + um_nome + "\n")
+#          test_file.write("Relacionadas " + str(entidades_relacionadas[um_nome]) + "\n\n")
+
 with open("entidades_nomeadas_relacionadas_2", 'w') as test_file:
     for um_nome in entidades_um_nome:
         entidades_relacionadas[um_nome] = []
