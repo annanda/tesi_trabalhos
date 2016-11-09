@@ -126,7 +126,7 @@ for term in terms:
 
     tf_idf.append(tf)
 
-search_query = "Eddard Stark"
+search_query = "Battle of Blackwater"
 document_tokens = tokenize_document(search_query)
 existing_terms = set(terms).intersection(document_tokens)  # remove termos que não existem nos documentos
 
