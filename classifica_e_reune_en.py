@@ -177,6 +177,12 @@ with open("classifica_e_reune11.csv", 'w+') as file:
         file.write(str(entidade))
         file.write("\n")
 
+with open("classifica_e_reune.csv", 'w+') as file:
+    file.write("{0},{1}\n".format("nome", "classe"))
+    for entidade in sorted(list(set(entidades))):
+        file.write("{0},{1}\n".format(entidade.canonico, entidade.classification))
+
+
 with open("classifica_e_reune.json", 'w+') as file:
     file.write(jsonpickle.encode(entidades))
 
