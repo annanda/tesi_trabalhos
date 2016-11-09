@@ -26,7 +26,7 @@ def tag_sentences(text):
     tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
 
     for s in tokenized_sentences:
-        to.extend(s)
+        every_token.extend(s)
 
     tagged_sentences = [nltk.pos_tag(sentence) for sentence in tokenized_sentences]
 
@@ -35,21 +35,18 @@ def tag_sentences(text):
 
 def get_ne(tagged_sentences):
     named_entities = []
+    tokens = []
 
-    is_dirty = False
-
-    ne = []
     for i, sentence in enumerate(tagged_sentences):
         start_index = None
+        in_doubt = False
         for j, tagged_word in enumerate(sentence):
 
-            if j == 0:
-                # if is_first_letter_upper(tagged_word):
-                #     is_dirty = True
-                continue
-
             if is_first_letter_upper(tagged_word):
-                ne.append(tagged_word)
+                tokens.append(tagged_word)
+
+                if j == 0 or sentence[j-1] in ["''", "``", "'"]:
+                    in_doubt = True
 
                 if start_index is None:
                     start_index = j
@@ -57,38 +54,36 @@ def get_ne(tagged_sentences):
                 if j != len(sentence) - 1:
                     continue
 
-            if ne and is_complement(tagged_word):
-                ne.append(tagged_word)
+            if tokens and is_complement(tagged_word):
+                tokens.append(tagged_word)
                 if j != len(sentence) - 1:
                     continue
 
-            if ne:
-                if has_np(ne):
-                    ne = remove_unfinished_complements(ne)
-                    named_entity = sentence_text(ne)
+            if tokens:
+                if has_noun_tag(tokens):
+                    tokens = remove_unfinished_complements(tokens)
+                    entity_name = sentence_text(tokens)
 
                     # resolve quando o 's no final de uma palavra não é separado em outro term
-                    if len(named_entity) > 2 and named_entity.endswith("'s"):
-                        named_entity = named_entity[:-2]
+                    if len(entity_name) > 2 and entity_name.endswith("'s"):
+                        entity_name = entity_name[:-2]
 
-                    if len(named_entity) > 2:  # remove entidades com apenas duas letras
-                        en = EN(named_entity)
+                    if len(entity_name) > 2:  # remove entidades com apenas duas letras
+                        en = EN(entity_name)
                         en.start_index = start_index
                         en.sentence = sentence_without_tag(sentence)
+                        en.in_doubt = in_doubt
 
-                        # if is_dirty:
-                        #     firsts.append(en)
-                        # else:
                         named_entities.append(en)
                 else:
-                    en = EN(sentence_text(ne))
+                    en = EN(sentence_text(tokens))
                     en.start_index = start_index
                     en.sentence = sentence
                     t.append(en)
 
-                # is_dirty = False
+                in_doubt = False
                 start_index = None
-                ne.clear()
+                tokens.clear()
 
     return named_entities
 
@@ -111,7 +106,7 @@ def is_first_letter_upper(word):
     return text[0].isupper()
 
 
-def has_np(ne):
+def has_noun_tag(ne):
     for word in ne:
         tag = word[1]
         if tag in ['NN', 'NNP', 'NNS', 'NNPS']:
@@ -139,15 +134,27 @@ def extract_nes_from_episodes():
         exit(-1)
 
     for season_dir in seasons_dirs:
-        # season_name = os.path.basename(season_dir)
-
         episodes_files = glob.glob(season_dir + "/*.txt")
         for episode_file in episodes_files:
             extracted_nes = extract_nes(episode_file)
             nes.extend(extracted_nes)
 
-    return nes
+    frequency_counter = Counter(every_token)
+    verified_nes = []
+    for ne in nes:
+        if ne.in_doubt:
+            first_word = ne.owords[0]
+            freq = frequency_counter[first_word]
+            freq_lower = frequency_counter[first_word.lower()]
+            if (freq > 1 and freq_lower == 0) or is_name_start(first_word):
+                verified_nes.append(ne)
+        else:
+            verified_nes.append(ne)
 
+    return verified_nes
+
+def is_name_start(word):
+    return word in "The Ser Prince Princess King Queen Lady Commander Lord Grand Septa Khal Maester".split()
 
 def create_ne_csv(named_entities):
     named_entities = map(lambda ne: ne.original, named_entities)
@@ -176,7 +183,7 @@ def create_ne_json(named_entities):
 
 
 t = []
-to = []
+every_token = []
 firsts = []
 
 if __name__ == "__main__":
@@ -186,7 +193,7 @@ if __name__ == "__main__":
     # for _ in set(before_e):
     #     print(_)
 
-    to = Counter(to)
+    every_token = Counter(every_token)
 
     print("\n==Perdidas por não ter NP=====================")
 
@@ -211,11 +218,11 @@ if __name__ == "__main__":
     for e in c:
         first = e.sentence[e.start_index]
         tuples.append((first,
-                      to[first],
-                      to[first.lower()],
-                      e.original,
-                      freq[e.original],
-                      e.sentence))
+                       every_token[first],
+                       every_token[first.lower()],
+                       e.original,
+                       freq[e.original],
+                       e.sentence))
     tuples.sort(key=lambda it: it[2])
     for t in tuples:
         print("{0} (Upper: {1}, Lower: {2}) {3} (freq: {4}) - {5}".format(t[0], t[1], t[2], t[3], t[4], t[5]))
@@ -234,8 +241,8 @@ if __name__ == "__main__":
     for e in d:
         word_before = e.sentence[e.start_index - 1]
         tuples.append((word_before,
-                       to[word_before],
-                       to[word_before.lower()],
+                       every_token[word_before],
+                       every_token[word_before.lower()],
                        e.original,
                        freq[e.original],
                        e.sentence

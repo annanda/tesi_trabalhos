@@ -38,3 +38,6 @@ for season in seasons_files:
 
         with open(os.path.join(save_dir, episode_name), 'w+', encoding='utf-8') as output:
             output.write(tagged_text)
+
+# juntar de volta o 's no nome, porque fica com o espaço quando tokeniza e volta para texto.
+# Exemplo: Night 's Watch não pega Night's Watch

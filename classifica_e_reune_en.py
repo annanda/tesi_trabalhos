@@ -210,6 +210,8 @@ print("Entidades com place: {0} ({1})".format(quantas_entidades_com_place,
 # Queen Regent [DONE]
 # Meister
 # Grand Meister
+# Septa
+# Khal
 
 # Tirar ' no final do nomes
 

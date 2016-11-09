@@ -9,6 +9,7 @@ class EN:
         self.owords = None
         self.cwords = None
         self.sentence = None
+        self.in_doubt = False
 
         self.original = ne_as_string
         self.canonico = ne_as_string
