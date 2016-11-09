@@ -55,13 +55,13 @@ def extract_relations(sentence):
             if sentence.tokens[i][1] in ["VB", "VBG", "VBZ", "VBN"]:
                 relation = (entity1.canonico, sentence.tokens[i][0], entity2.canonico)
                 relations.append(relation)
-                print(str(relation), " ".join([token[0]+" "+token[1] for token in sentence.tokens]))
+                # print(str(relation), " ".join([token[0] + " " + token[1] for token in sentence.tokens]))
 
     return relations
 
 
 def main():
-    with open("entidades_nomeadas.json", "r", encoding="utf-8") as file:
+    with open("classifica_e_reune.json", "r", encoding="utf-8") as file:
         entities = jsonpickle.decode(file.read())
 
     sentences = group_entities_by_sentence(entities)

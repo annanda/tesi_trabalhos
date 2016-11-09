@@ -4,19 +4,6 @@ import jsonpickle
 from ne import EN
 
 
-# with open("entidades_nomeadas.csv", 'r') as file:
-#     lines = file.readlines()
-#     lines = map(lambda l: l.strip(), lines)
-#
-# entidades = []
-# for line in lines:
-#     entidade = EN()
-#     entidade.original = line
-#     entidade.canonico = entidade.original
-#     entidade.classification = "other"
-#     entidades.append(entidade)
-
-
 class Ocurrence:
     def __init__(self, index, sentence):
         self.index = index
@@ -32,9 +19,34 @@ for entidade in entidades:
         ne_ocurrences[entidade.original] = []
     ne_ocurrences[entidade.original].append(Ocurrence(entidade.start_index, entidade.sentence))
 
-entidades = sorted(list(set(entidades)))
-
 for entidade in entidades:
+
+    if len(entidade.owords) > 2 \
+            and entidade.owords[0] == "Lord" \
+            and entidade.owords[1] == "Commander" \
+            and entidade.owords[2] != "of":
+        entidade.canonico = " ".join(entidade.owords[2:])
+        entidade.classification = "person"
+
+    if len(entidade.owords) > 2 \
+            and entidade.owords[0] == "Queen" \
+            and entidade.owords[1] == "Regent" \
+            and entidade.owords[2] != "of":
+        entidade.canonico = " ".join(entidade.owords[2:])
+        entidade.classification = "person"
+
+    if len(entidade.owords) > 1 \
+            and entidade.owords[0] == "Lord" \
+            and entidade.owords[1] != "of" \
+            and entidade.owords[1] != "Commander":  # evita pegar os "Lord Commander", que já foram tratados
+        entidade.canonico = " ".join(entidade.owords[1:])
+        entidade.classification = "person"
+
+    if len(entidade.owords) > 1 \
+            and entidade.owords[0] == "Grand" \
+            and entidade.owords[1] != "Maester":
+        entidade.canonico = " ".join(entidade.owords[1:])
+        entidade.classification = "person"
 
     if entidade.owords[0] == "Ser":
         entidade.canonico = " ".join(entidade.owords[1:])
@@ -64,24 +76,15 @@ for entidade in entidades:
         entidade.canonico = " ".join(entidade.owords[1:])
         entidade.classification = "person"
 
-    if len(entidade.owords) > 2 \
-            and entidade.owords[0] == "Lord" \
-            and entidade.owords[1] == "Commander" \
-            and entidade.owords[2] != "of":
-        entidade.canonico = " ".join(entidade.owords[2:])
+    if len(entidade.owords) > 1 and entidade.owords[0] == "Septa" and entidade.owords[1] != "of":
+        entidade.canonico = " ".join(entidade.owords[1:])
         entidade.classification = "person"
 
-    if len(entidade.owords) > 2 \
-            and entidade.owords[0] == "Queen" \
-            and entidade.owords[1] == "Regent" \
-            and entidade.owords[2] != "of":
-        entidade.canonico = " ".join(entidade.owords[2:])
+    if len(entidade.owords) > 1 and entidade.owords[0] == "Khal" and entidade.owords[1] != "of":
+        entidade.canonico = " ".join(entidade.owords[1:])
         entidade.classification = "person"
 
-    if len(entidade.owords) > 1 \
-            and entidade.owords[0] == "Lord" \
-            and entidade.owords[1] != "of" \
-            and entidade.owords[1] != "Commander":  # evita pegar os "Lord Commander", que já foram tratados
+    if len(entidade.owords) > 1 and entidade.owords[0] == "Maester" and entidade.owords[1] != "of":
         entidade.canonico = " ".join(entidade.owords[1:])
         entidade.classification = "person"
 
@@ -163,22 +166,19 @@ for entidade in entidades:
             elif ocurrence.index > 0 and ocurrence.sentence[ocurrence.index - 1] in ["at", "in", "depart", "on", "to", "near", "reaches", "outside", "from"]:
                 sounds_like_a_place += 1
 
-        if sounds_like_a_place > 0:
-            print("{0} {1}/{2} ({3}%)".format(entidade, sounds_like_a_place, len(ne_ocurrences[entidade.original]), sounds_like_a_place/len(ne_ocurrences[entidade.original])*100))
+        # if sounds_like_a_place > 0:
+        #     print("{0} {1}/{2} ({3}%)".format(entidade, sounds_like_a_place, len(ne_ocurrences[entidade.original]), sounds_like_a_place / len(ne_ocurrences[entidade.original]) * 100))
 
         if sounds_like_a_place > 5:
             entidade.classification = "place"
 
 with open("classifica_e_reune11.csv", 'w+') as file:
-    for entidade in entidades:
+    for entidade in sorted(list(set(entidades))):
         file.write(str(entidade))
         file.write("\n")
 
-# with open("classifica_e_reune.json", 'w+') as file:
-#     file.write(jsonpickle.encode(entidades))
-
-# for entidade in entidades:
-#     print(entidade)
+with open("classifica_e_reune.json", 'w+') as file:
+    file.write(jsonpickle.encode(entidades))
 
 print("\n----------------\n")
 
@@ -195,40 +195,3 @@ print("Entidades com person: {0} ({1})".format(quantas_entidades_com_person,
                                                quantas_entidades_com_person / quantas_entidades * 100))
 print("Entidades com place: {0} ({1})".format(quantas_entidades_com_place,
                                               quantas_entidades_com_place / quantas_entidades * 100))
-
-# Titulos:
-# Remover os titulos do nome canonico
-# Lord [DONE]
-# Commander [DONE]
-# Lord Commander [DONE]
-# Prince [DONE]
-# Princess [DONE]
-# Lady [DONE]
-# Ser [DONE]
-# King [DONE]
-# Queen [DONE]
-# Queen Regent [DONE]
-# Meister
-# Grand Meister
-# Septa
-# Khal
-
-# Tirar ' no final do nomes
-
-# Substituit '' e `` por "
-
-# O que fazer com ens que são "Lady", "Lord Commander", "Lord 's Choosen", etc...
-
-# Palavra The:
-# Nada. Aparentemente, tudo que começa com The não se refere a mais nada
-
-# Prefixos de lugares
-# at
-# depart
-# in
-# out of
-# in the
-# at the
-# back to
-
-# Palavra "Houses"

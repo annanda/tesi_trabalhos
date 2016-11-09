@@ -45,7 +45,7 @@ def get_ne(tagged_sentences):
             if is_first_letter_upper(tagged_word):
                 tokens.append(tagged_word)
 
-                if j == 0 or sentence[j-1] in ["''", "``", "'"]:
+                if j == 0 or sentence[j - 1] in ["''", "``", "'"]:
                     in_doubt = True
 
                 if start_index is None:
@@ -75,11 +75,6 @@ def get_ne(tagged_sentences):
                         en.in_doubt = in_doubt
 
                         named_entities.append(en)
-                else:
-                    en = EN(sentence_text(tokens))
-                    en.start_index = start_index
-                    en.sentence = sentence
-                    t.append(en)
 
                 in_doubt = False
                 start_index = None
@@ -153,8 +148,10 @@ def extract_nes_from_episodes():
 
     return verified_nes
 
+
 def is_name_start(word):
     return word in "The Ser Prince Princess King Queen Lady Commander Lord Grand Septa Khal Maester".split()
+
 
 def create_ne_csv(named_entities):
     named_entities = map(lambda ne: ne.original, named_entities)
@@ -182,79 +179,13 @@ def create_ne_json(named_entities):
         file.write(jsonpickle.encode(named_entities))
 
 
-t = []
 every_token = []
-firsts = []
 
 if __name__ == "__main__":
     entities = extract_nes_from_episodes()
 
-    # before_e = [e.sentence[e.start_index - 1] for e in entities]
-    # for _ in set(before_e):
-    #     print(_)
-
-    every_token = Counter(every_token)
-
-    print("\n==Perdidas por não ter NP=====================")
-
-    names = [ne.original for ne in entities]
-    freq = Counter(names)
-
-    print("Perdidas", len(t))
-    print("Perdidas Unicas", len(set(t)))
-    for e in set(t):
-        if freq[e.original] == 0:
-            print(e.sentence[e.start_index:e.start_index + len(e.owords)], e.sentence)
-
-    print("\n==Depois de abertura de fala=====================")
-
-    c = []
-    for e in entities:
-        if e.sentence[e.start_index - 1] in ["''", "``", "'"]:
-            c.append(e)
-
-    # c = set(c)
-    tuples = []
-    for e in c:
-        first = e.sentence[e.start_index]
-        tuples.append((first,
-                       every_token[first],
-                       every_token[first.lower()],
-                       e.original,
-                       freq[e.original],
-                       e.sentence))
-    tuples.sort(key=lambda it: it[2])
-    for t in tuples:
-        print("{0} (Upper: {1}, Lower: {2}) {3} (freq: {4}) - {5}".format(t[0], t[1], t[2], t[3], t[4], t[5]))
-
-    print("Que vem depois de abertura de fala:", len(c))
-
-    print("\n==Que vem depois de uma palavra com maiuscula=====================")
-
-    d = []
-    for e in entities:
-        if e.sentence[e.start_index - 1][0].isupper():
-            d.append(e)
-
-    # d = set(d)
-    tuples = []
-    for e in d:
-        word_before = e.sentence[e.start_index - 1]
-        tuples.append((word_before,
-                       every_token[word_before],
-                       every_token[word_before.lower()],
-                       e.original,
-                       freq[e.original],
-                       e.sentence
-                       ))
-    tuples.sort(key=lambda it: it[2])
-    for t in tuples:
-        print("{0} (Upper: {1}, Lower: {2}) {3} (freq: {4}) - {5}".format(t[0], t[1], t[2], t[3], t[4], t[5]))
-
-    print("Depois de palavra com maiúscula:", len(d))
-
     create_ne_csv(entities)
-    # create_ne_json(entities)
+    create_ne_json(entities)
     create_ne_with_sentence_csv(entities)
 
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
@@ -277,8 +208,7 @@ if __name__ == "__main__":
 # sexta tentativa: migrando o codigo do java pro python
 # 103 entidades nomeadas
 
-
-#tentativa anterior, usando Java
+# tentativa anterior, usando Java
 # 2778 entidades nomeadas
 
 # juntanto todos os documentos
@@ -290,12 +220,6 @@ if __name__ == "__main__":
 # ignorando sempre a primeira palavra de cada sentenca
 # 1227 entidades nomeadas
 
-# Começos de frases
-# - não
-# ' não, a não ser quando termina ''
-# & não, só aparece em Black and White
-# ( não
-# , não
-# ''
-# ; não
-# ``
+# Levando em consideração a primeira palavra, mas só considerando ela se não aparecer em outra parte do texto
+# Aceitando NNS e NNPS
+# 1273 entidades nomeadas
