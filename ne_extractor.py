@@ -260,10 +260,10 @@ if __name__ == "__main__":
 # primeira tentativa de extrair entidades nomeadas no arquivo Baelor.txt
 # 873 entidades nomeadas
 
-# segunda tentativa: transformando de lista pra conjunto
+# segunda tentativa: transformando de lista pra conjunto no arquivo Baelor.txt
 # 319 entidades nomeadas
 
-# terceira tentativa: colocando ne seguidas como uma só
+# terceira tentativa: colocando ne seguidas como uma só no arquivo Baelor.txt
 # 336 entidades nomeadas
 # muitas substrings repetidas
 
@@ -276,6 +276,10 @@ if __name__ == "__main__":
 
 # sexta tentativa: migrando o codigo do java pro python
 # 103 entidades nomeadas
+
+
+#tentativa anterior, usando Java
+# 2778 entidades nomeadas
 
 # juntanto todos os documentos
 # 1296 entidades nomeadas
