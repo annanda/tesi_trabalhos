@@ -1,4 +1,3 @@
 .idea
 *.pyc
-pre_processed_documents/*
-tagged_documents/*
+generated/*
